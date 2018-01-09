@@ -1,0 +1,138 @@
+/**index.wxss**/
+
+/*轮播控件*/
+
+.home-swiper {
+  width: 95%;
+  height: 360rpx;
+}
+
+.slide-image {
+  width: 100%;
+  height: 100%;
+}
+
+swiper-item {
+  border-radius: 20rpx;
+}
+
+/* 头部 */
+
+.header {
+  height: 100rpx;
+  width: 100%;
+  overflow: hidden;
+  background-color: #f0f0f0;
+  margin-bottom: 20rpx;
+}
+
+.h-content {
+  width: 33.3%;
+  display: inline-block;
+}
+
+.h-content text {
+  font-size: 32rpx;
+  line-height: 100rpx;
+  margin: 0 15rpx;
+  color: #999;
+}
+
+.h-middle {
+  line-height: 100rpx;
+  font-size: 34rpx;
+  text-align: center;
+}
+
+.h-fl image {
+  width: 40rpx;
+  height: 40rpx;
+  float: left;
+  margin: 25rpx 0 0 15rpx;
+}
+
+.h-fr image {
+  width: 40rpx;
+  height: 28rpx;
+  float: right;
+  margin: 38rpx 15rpx 0 0;
+}
+
+.h-fr {
+  text-align: right;
+}
+
+/* 景区租车卡片 */
+
+.card-title {
+  color: #6ec8c5;
+  line-height: 65rpx;
+  margin: 0 0 0 15rpx;
+}
+
+.card-content image {
+  width: 100%;
+  height: 300rpx;
+  border-bottom-left-radius: 20rpx;
+  border-bottom-right-radius: 20rpx;
+}
+
+/* 附近的车卡片*/
+
+.near {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  color: #999;
+  font-size: 30rpx;
+  margin: 20rpx 0 0 0;
+}
+
+.near text::before {
+  position: absolute;
+  z-index: 2;
+  top: 25rpx;
+  left: 160rpx;
+  content: "";
+  border-top: solid #999 1px;
+  width: 18%;
+}
+
+.near text::after {
+  position: absolute;
+  z-index: 2;
+  top: 25rpx;
+  right: 160rpx;
+  content: "";
+  border-top: solid #999 1px;
+  width: 18%;
+}
+
+.nearCard-fl {
+  width: 40%;
+  float: left;
+}
+
+.nearCard-fl image {
+  width: 200rpx;
+  height: 200rpx;
+  padding: 8% 15%;
+}
+
+.nearCard-fr {
+  font-size: 27rpx;
+  line-height: 50rpx;
+  width: 60%;
+  margin-left: 40%;
+  margin-top: 15rpx;
+  color: #999;
+}
+
+.nearCard-fr text {
+  font-size: 22rpx;
+}
+
+.nearCard {
+  height: 240rpx;
+}
+

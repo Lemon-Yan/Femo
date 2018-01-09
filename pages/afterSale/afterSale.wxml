@@ -1,0 +1,24 @@
+<!--pages/afterSale/afterSale.wxml-->
+<view class='container'>
+
+  <!-- 数据列表 -->
+  <view class='card list-section'>
+    <view class='list-item'>
+      <text class='list-title'>维修站</text>
+    </view>
+    <view class='list-item'>
+      <text class='list-title'>1、某维修站</text>
+      <text class='list-content'>地址：浙江省宁波市海曙区布政巷18号科创大厦11楼1102</text>
+    </view>
+    <view class='list-item'>
+      <text class='list-title'>2、某维修站</text>
+      <text class='list-content'>地址：浙江省宁波市海曙区布政巷18号科创大厦11楼1102</text>
+    </view>
+    <view class='list-item'>
+      <text class='list-title inline-blok'>客服热线</text>
+      <text class='list-content inline-blok ml30'>400-889-2502</text>
+    </view>
+
+  </view>
+
+</view>

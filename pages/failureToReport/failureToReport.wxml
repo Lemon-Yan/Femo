@@ -1,0 +1,71 @@
+<!--pages/failureToReport/failureToReport.wxml-->
+<view class='container'>
+  <view class='card'>
+    <view class='input-form'>
+      <view class='input-item currentPosition'>
+        <text>当前位置</text>
+        <input value="{{resetPosition}}" maxlength="22" type="text" bindinput="bindPositionInput" name="input" placeholder="当前位置" />
+        <view class='positionIcon' bindtouchstart="openLocation" >
+          <image src='../../images/position.png'></image>
+        </view>
+      </view>
+      <view class='input-item'>
+        <text>车牌号</text>
+        <input value="{{resetCarNumber}}" type="text" bindinput="bindCarNumberInput" name="input" placeholder="请输入车牌号" />
+      </view>
+
+      <view class='input-item txt-center'>
+        <text>请选择车辆问题类型</text>
+      </view>
+      <view class='input-item questionType'>
+        <checkbox-group bindchange="checkboxChange">
+          <label class="checkbox">
+            <checkbox color="#20B3AD" value="熄火" />熄火
+          </label>
+          <label class="checkbox">
+            <checkbox color="#20B3AD" value="损坏" />损坏
+          </label>
+          <label class="checkbox">
+            <checkbox color="#20B3AD" value="没电" />没电
+          </label>
+
+          <label class="checkbox">
+            <checkbox color="#20B3AD" value="事故" />事故
+          </label>
+          <label class="checkbox">
+            <checkbox color="#20B3AD" value="违章" />违章
+          </label>
+          <label class="checkbox">
+            <checkbox color="#20B3AD" value="其它" />其它
+          </label>
+        </checkbox-group>
+      </view>
+
+
+      <view class='input-item remark'>
+        <textarea maxlength="200" placeholder="问题补充描述" bindinput="bindNumber" />
+        <view class='number-txt'>
+          <text class='change-num'>{{txtAccount}}</text>/200
+        </view>
+      </view>
+    </view>
+
+    <view class='input-item txt-center'>
+      <text>请提供您的信息</text>
+    </view>
+    <view class='input-item provide-user'>
+      <text>您的姓名</text>
+      <input value="{{resetPosition}}" type="text" bindinput="bindPositionInput" name="input" placeholder="请输入姓名" />
+    </view>
+    <view class='input-item provide-user'>
+      <text>联系电话</text>
+      <input value="{{resetPosition}}" type="number" bindinput="bindPositionInput" name="input" placeholder="请输入联系电话" />
+    </view>
+
+    <view class='btn'>
+      <button class='' type="primary" hover-class="other-button-hover">提交</button>
+    </view>
+
+  </view>
+
+</view>

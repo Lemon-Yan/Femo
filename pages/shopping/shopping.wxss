@@ -1,0 +1,36 @@
+/* pages/shopping/shopping.wxss */
+
+.card-img image {
+  width: 100%;
+  height: 240rpx;
+  border-radius: 20rpx;
+}
+
+.card-txt {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 90%;
+  padding: 90rpx 30rpx;
+}
+
+.card-txt view {
+  font-size: 50rpx;
+  display: inline-block;
+  color: #fff;
+}
+
+.item-content {
+  float: right;
+}
+
+.item-content text {
+  font-size: 22rpx;
+}
+
+.item-content image {
+  width: 64rpx;
+  height: 64rpx;
+  float: right;
+}

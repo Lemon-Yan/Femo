@@ -1,0 +1,233 @@
+/* pages/carRental/carRental.wxss */
+
+.card {
+  width: 95%;
+  background-color: #fff;
+  margin: 20rpx auto 0;
+  border-radius: 20rpx;
+}
+
+.carDesc {
+  color: #999;
+  line-height: 65rpx;
+  margin: 0 15rpx 0 15rpx;
+}
+
+.card-content image {
+  width: 100%;
+  height: 300rpx;
+  border-top-left-radius: 20rpx;
+  border-top-right-radius: 20rpx;
+}
+
+.share image {
+  width: 35rpx;
+  height: 35rpx;
+  display: inline-block;
+  margin: 15rpx 0 0 0;
+}
+
+.share {
+  display: inline-block;
+  float: right;
+  font-size: 22rpx;
+}
+
+.share text {
+  font-size: 22rpx;
+  margin: 0 15rpx;
+}
+
+.carDesc2 text {
+  font-size: 22rpx;
+}
+
+.carDesc2 button {
+  width: 20%;
+  display: inline-block;
+  height: 50rpx;
+  float: right;
+  line-height: 50rpx;
+}
+
+button[type="primary"] {
+  color: #fff;
+  background-color: #20b3ad;
+  font-size: 26rpx;
+  margin-top: 10rpx;
+}
+
+/* 车辆详情 */
+
+.scroll-view-item {
+  border: solid red 1px;
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.bc_green {
+  background-color: green;
+}
+
+.bc_red {
+  background-color: red;
+}
+
+/* 滚动部分 */
+
+.scroll-view_H {
+  white-space: nowrap;
+  width: 90%;
+  display: inline-block;
+  margin-left: 10%;
+  margin-top: -5%;
+}
+
+.scroll-view-item_H {
+  display: inline-block;
+  width: 30%;
+  height: 150rpx;
+  margin: 0 15rpx;
+  border: 20rpx;
+}
+
+/* 车辆配置详情 */
+
+.toggleBtn {
+  display: inline-block;
+  height: 50rpx;
+  background-color: #fff;
+  border-top-left-radius: 15rpx;
+  border-top-right-radius: 15rpx;
+  padding: 10rpx 30rpx;
+  margin: 0 20rpx 2rpx 0;
+  font-size: 28rpx;
+  line-height: 50rpx;
+  color: #999;
+}
+
+.carDetail {
+  width: 95%;
+  margin: 20rpx auto 0;
+  border-bottom-left-radius: 20rpx;
+  border-bottom-right-radius: 20rpx;
+  overflow: hidden;
+}
+
+.carDetailContent {
+  background-color: #fff;
+  padding: 15rpx;
+  color: #999;
+  font-size: 26rpx;
+}
+
+.carDetail-list {
+  margin: 20rpx 0;
+}
+
+.carDetailImgContain {
+  overflow: hidden;
+}
+
+/* 车身颜色 */
+
+.car-c {
+  border-radius: 50%;
+  border: solid #999 1px;
+  width: 35rpx;
+  height: 35rpx;
+  margin: 0 10rpx;
+  display: inline-block;
+}
+
+.carColorContain {
+  margin-left: 20%;
+  margin-top: -6%;
+}
+
+.bg-orange {
+  background-color: #d0b816;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.bg-blue {
+  background-color: #6f91bf;
+}
+
+.bg-red {
+  background-color: #b11d33;
+}
+
+.bg-oryellow {
+  background-color: #d24a1a;
+}
+
+/* 亮点配置 */
+
+.lightContent {
+  margin-left: 20%;
+  margin-top: -6%;
+}
+
+.lightDot-fl {
+  width: 50%;
+  float: left;
+}
+
+.lightDot-fr {
+  width: 50%;
+  float: right;
+}
+
+.lightDot-middle {
+  width: 100%;
+}
+
+.lightDot-txt, .lightDot-txt text {
+  font-size: 20rpx;
+  color: #999;
+  line-height: 50rpx;
+}
+
+.lightDot-txt button {
+  width: 28%;
+  display: inline-block;
+  height: 50rpx;
+  float: right;
+  line-height: 50rpx;
+}
+
+button[type="default"] {
+  font-size: 24rpx;
+  color: #999;
+}
+
+/* 价位 */
+
+.priceDetail {
+  margin-left: 12%;
+  margin-top: -5%;
+}
+
+.table-t {
+}
+
+.table-t text {
+  font-size: 22rpx;
+  color: #999;
+  width: 19%;
+  display: inline-block; 
+  border-left: solid #e4e4e4 1px; 
+  border-top: solid #e4e4e4 1px;
+  text-align: center;
+  padding: 10rpx 0;
+}
+.table-t text:last-child{
+  border-right: solid #e4e4e4 1px;
+}
+.table-content text{
+  border-bottom:solid #e4e4e4 1px;
+}

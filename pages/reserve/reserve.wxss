@@ -1,0 +1,55 @@
+/* pages/reserve/reserve.wxss */
+
+.input-item {
+  padding: 0 40rpx;
+}
+
+.input-item text {
+  font-size: 26rpx;
+  color: #999;
+  line-height: 60rpx;
+}
+
+.input-item input, textarea {
+  border: solid #e4e4e4 1px;
+  padding: 10rpx;
+  margin: 10rpx 0;
+  font-size: 26rpx;
+  width: 97%;
+}
+
+.btn {
+  margin: 50rpx 0 0 0;
+}
+
+.picker {
+  border: solid #e4e4e4 1px;
+  padding: 20rpx 10rpx;
+  font-size: 26rpx;
+  color: #999;
+}
+
+.remark {
+  position: relative;
+}
+
+.number-txt {
+  position: absolute;
+  top: 88%;
+  right: 6%;
+  z-index: 2;
+  font-size: 24rpx;
+  color: #999;
+}
+
+.number-txt text {
+  font-size: 24rpx;
+  color: #999;
+}
+
+/* 按钮 */
+
+button[type="primary"] {
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+}

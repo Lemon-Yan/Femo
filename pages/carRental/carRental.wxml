@@ -1,0 +1,127 @@
+<!--pages/carRental/carRental.wxml-->
+<view class='container'>
+  <view class='card b-shadow'>
+    <view class='card-content'>
+      <image src='../../images/haibao.png'></image>
+    </view>
+    <view class='carDesc carDesc1'>
+      <text>奇瑞EQ1两座 四座</text>
+      <view class='share'>
+        <image src='../../images/position.png'></image>
+        <text>收藏</text>
+        <image src='../../images/position.png'></image>
+        <text>分享</text>
+      </view>
+    </view>
+    <view class='carDesc carDesc2'>
+      <text>2017款奇瑞EQ1 纯电动 后置后驱 电动车单速变速箱</text>
+      <button bindtap="reserveBtn" class='bg-c' type="primary" hover-class="other-button-hover">预约</button>
+    </view>
+  </view>
+
+
+  <view class='carDetail b-shadow'>
+    <view class='toggleBtn'>两座</view>
+    <view class='toggleBtn'>四座</view> 
+    <view class='carDetailContent'>
+
+      <view class='carDetail-list'>价位：
+        <!-- <text class='priceColor'>￥6.68万</text> -->
+        <view class='priceDetail'>
+          <view class='table-t table-title'>
+            <text>租金/月</text>
+            <text>押金</text>
+            <text>签约类型</text>
+            <text>支付方式</text>
+            <text>福利</text>
+          </view>
+          <view class='table-t table-content'>
+            <text>1200/月</text>
+            <text>3万</text>
+            <text>两年</text>
+            <text>半年</text>
+            <text>含保险</text>
+          </view>
+        </view>
+
+      </view>
+
+      <view class='carDetail-list clearfix carDetailImgContain'>
+        图片：
+        <scroll-view class="scroll-view_H" scroll-x="true" bindscroll="scroll">
+          <navigator url='../appearance/appearance'>
+            <image class="scroll-view-item_H" src='../../images/haibao.png'></image>
+            <image class="scroll-view-item_H" src='../../images/haibao.png'></image>
+            <image class="scroll-view-item_H" src='../../images/haibao.png'></image>
+            <image class="scroll-view-item_H" src='../../images/haibao.png'></image>
+            <image class="scroll-view-item_H" src='../../images/haibao.png'></image>
+            <image class="scroll-view-item_H" src='../../images/haibao.png'></image>
+          </navigator>
+        </scroll-view>
+      </view>
+
+      <view class='carDetail-list clearfix'>
+        车身颜色：
+        <view class='carColorContain'>
+          <text class='car-c bg-orange'></text>
+          <text class='car-c bg-white'></text>
+          <text class='car-c bg-blue'></text>
+          <text class='car-c bg-red'></text>
+          <text class='car-c bg-oryellow'></text>
+        </view>
+      </view>
+
+      <view class='carDetail-list clearfix'>
+        亮点配置：
+        <view class='lightContent'>
+
+          <view class='lightDot-fl'>
+            <view class='lightDot-txt'>
+              续航里程：
+              <text>180公里</text>
+            </view>
+            <view class='lightDot-txt'>
+              车身结构：
+              <text>3门4座两厢</text>
+            </view>
+            <view class='lightDot-txt'>
+              整车质保：
+              <text>3年或12万公里</text>
+            </view>
+            <view class='lightDot-txt'>
+              驱动方式：
+              <text>后置后驱</text>
+            </view>
+          </view>
+
+          <view class='lightDot-fr'>
+            <view class='lightDot-txt'>
+              功率：
+              <text>30KW</text>
+            </view>
+            <view class='lightDot-txt'>
+              车身尺寸：
+              <text>3200*1670*1550</text>
+            </view>
+            <view class='lightDot-txt'>
+              变速箱：
+              <text>单速变速箱</text>
+            </view>
+          </view>
+
+          <view class='lightDot-middle clearfix'>
+            <view class='lightDot-txt'>
+              充电方式：
+              <text>快充0.5~1.5小时，慢充6小时</text>
+              <button type="default" bindtap='moreConfig' hover-class="other-button-hover">更多配置</button>
+            </view>
+          </view>
+
+        </view>
+      </view>
+
+
+    </view>
+  </view>
+
+</view>

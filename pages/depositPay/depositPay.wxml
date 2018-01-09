@@ -1,0 +1,18 @@
+<!--pages/depositPay/depositPay.wxml-->
+<view class='container'>
+  <view class='card b-shadow'>
+   <view class='depositDes'>
+      缴纳押金
+    </view>
+    <view class='money'>
+      <text class='f-orange'>￥999</text>
+    </view> 
+    <view class='moneyImg'>
+      <image src='../../images/haibao.png'></image>
+    </view>
+    <view class='payBtn'>
+      <button class='' type="primary" hover-class="other-button-hover">立即支付</button>
+    </view> 
+  </view>
+
+</view>

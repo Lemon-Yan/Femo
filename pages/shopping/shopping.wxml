@@ -1,0 +1,52 @@
+<!--pages/shopping/shopping.wxml-->
+<view class="container">
+  <navigator url='../cc/cc' class='card b-shadow'>
+    <view class='card-img'>
+      <image src='../../images/bbb.jpg'></image>
+    </view>
+    <view class='card-txt'>
+      <view class='item-title'>
+        会员积分
+      </view>
+      <view class='item-content'>
+        50
+        <text class=''>分</text>
+        <image src='../../images/right.png'></image>
+      </view>
+    </view>
+  </navigator>
+
+  <navigator url='../cc/cc' class='card b-shadow'>
+    <view class='card-img'>
+      <image src='../../images/bbb.jpg'></image>
+    </view>
+    <view class='card-txt'>
+      <view class='item-title'>
+        优惠券
+      </view>
+      <view class='item-content'>
+        10
+        <text class=''>张</text>
+        <image src='../../images/right.png'></image>
+      </view>
+    </view>
+  </navigator>
+
+  <navigator url='../cc/cc' class='card b-shadow'>
+    <view class='card-img'>
+      <image src='../../images/bbb.jpg'></image>
+    </view>
+    <view class='card-txt'>
+      <view class='item-title'>
+        景点乘车票
+      </view>
+      <view class='item-content'>
+        2
+        <text class=''>张</text>
+        <image src='../../images/right.png'></image>
+      </view>
+    </view>
+  </navigator>
+
+
+</view>

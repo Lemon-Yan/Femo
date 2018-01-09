@@ -1,0 +1,43 @@
+<!--pages/realName/realName.wxml-->
+<view class='container'>
+  <view class='card'>
+    <view class='toggleBtn padd'>
+      <text class='active'>身份证认证</text>
+      <text>驾驶证认证</text>
+    </view>
+
+    <view class='upload'>
+      <view class='imgDes padd'>
+        <text>正面</text>
+        <text class='other'>反面</text>
+      </view>
+      <view class='imgContent padd'>
+        <image src='../../images/haibao.png'></image>
+        <image src='../../images/haibao.png'></image>
+      </view>
+      <view class="selectImg padd">
+        <image src='../../images/haibao.png'></image>
+      </view>
+      <view class='uploadDes padd'>
+        <text>*请按照示例图将身份证进行拍照上传</text>
+        <text>*图片模糊、遮挡、光线暗不予通过</text>
+      </view>
+    </view>
+
+    <view class='sample'>
+      <view class='imgDes padd'>
+        <text>示例图正面</text>
+        <text class='sampleOther'>示例图反面</text>
+      </view>
+      <view class='imgContent padd'>
+        <image src='../../images/haibao.png'></image>
+        <image src='../../images/haibao.png'></image>
+      </view>
+    </view>
+
+    <view class='btn'>
+      <button class='bg-c' type="primary" hover-class="other-button-hover">立即认证</button>
+    </view> 
+  </view>
+
+</view>

@@ -1,0 +1,50 @@
+<!--pages/moreConfig/moreConfig.wxml-->
+<view class='container'> 
+  <!-- 广告 -->
+  <view class='card b-shadow'>
+    <navigator url='../carInfo/carInfo' class='card-content'>
+      <image src='../../images/haibao.png'></image>
+    </navigator>
+  </view>
+
+  <view class='card b-shadow configDetail'> 
+    <view class='table-title'>2017版奇瑞EQ1</view>  
+    <view class='table-w table-fl bor-r'>
+      <text class='table-txt'>整车质保</text>
+      <text class='table-txt'>变速箱</text>
+      <text class='table-txt'>最高车速（km/h）</text>
+       <text class='table-txt'>整车质保</text>
+      <text class='table-txt'>变速箱</text>
+      <text class='table-txt'>最高车速（km/h）</text>
+      <text class='table-txt'>整车质保</text>
+      <text class='table-txt'>变速箱</text>
+      <text class='table-txt'>最高车速（km/h）</text>
+      <text class='table-txt'>整车质保</text>
+      <text class='table-txt'>变速箱</text>
+      <text class='table-txt'>最高车速（km/h）</text>
+       <text class='table-txt'>整车质保</text>
+      <text class='table-txt'>变速箱</text>
+      <text class='table-txt'>最高车速（km/h）</text>
+    </view> 
+
+    <view class='table-w table-fr'>
+      <text class='table-txt'>三年或12万公里</text>
+      <text class='table-txt'>电动车单速变速箱</text>
+      <text class='table-txt'>100</text>
+      <text class='table-txt'>三年或12万公里</text>
+      <text class='table-txt'>电动车单速变速箱</text>
+      <text class='table-txt'>100</text>
+      <text class='table-txt'>三年或12万公里</text>
+      <text class='table-txt'>电动车单速变速箱</text>
+      <text class='table-txt'>100</text>
+      <text class='table-txt'>三年或12万公里</text>
+      <text class='table-txt'>电动车单速变速箱</text>
+      <text class='table-txt'>100</text>
+        <text class='table-txt'>三年或12万公里</text>
+      <text class='table-txt'>电动车单速变速箱</text>
+      <text class='table-txt'>100</text>
+    </view>
+
+  </view>
+
+</view>

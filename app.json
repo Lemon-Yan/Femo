@@ -1,0 +1,66 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/lease/lease",
+    "pages/sale/sale",
+    "pages/my/my",
+    "pages/myJourney/myJourney",
+    "pages/carInfo/carInfo",
+    "pages/appearance/appearance",
+    "pages/moreConfig/moreConfig",
+    "pages/scenicCar/scenicCar",
+    "pages/carRental/carRental",
+    "pages/myOrder/myOrder",
+    "pages/deposit/deposit",
+    "pages/depositPay/depositPay",
+    "pages/memberCenter/memberCenter",
+    "pages/realName/realName",
+    "pages/shopping/shopping",
+    "pages/afterSale/afterSale",
+    "pages/share/share",
+    "pages/set/set",
+    "pages/helpCenter/helpCenter",
+    "pages/reserve/reserve",
+    "pages/failureToReport/failureToReport",
+    "pages/mapLookCar/mapLookCar"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#20b3ad",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "selectedColor": "#20B3AD",
+    "color": "#999999",
+    "borderStyle": "white",
+    "backgroundColor": "#F0F0F0",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/homeSelected.png",
+        "text": "首页"
+      },
+      {
+        "text": "租赁",
+        "pagePath": "pages/lease/lease",
+        "iconPath": "images/rent.png",
+        "selectedIconPath": "images/rentSelected.png"
+      },
+      {
+        "text": "预售",
+        "pagePath": "pages/sale/sale",
+        "iconPath": "images/sale.png",
+        "selectedIconPath": "images/saleSelected.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "iconPath": "images/mine.png",
+        "selectedIconPath": "images/mineSelected.png",
+        "text": "我的"
+      }
+    ]
+  }
+}

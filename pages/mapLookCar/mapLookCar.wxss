@@ -1,0 +1,45 @@
+/* pages/mapLookCar/mapLookCar.wxss */
+
+.title {
+  font-size: 26rpx;
+  color: white;
+  text-align: center;
+  background-color: #20b3ad;
+  border-top-right-radius: 20rpx;
+  border-top-left-radius: 20rpx;
+  line-height: 70rpx;
+}
+
+.map {
+  width: 100%;
+  height: 900rpx;
+}
+
+.map map {
+  width: 100%;
+  height: 100%;
+}
+
+.openCode {
+  height: 80rpx;
+  position: fixed;
+  top: 70%;
+  right: 5%;
+  background-color: #20b3ad;
+  border-radius: 20rpx;
+}
+
+.code-title {
+  font-size: 30rpx;
+  color: white;
+  display: inline-block;
+  line-height: 80rpx;
+  margin: 0 0 0 15rpx;
+}
+
+.openCode image {
+  width: 40rpx;
+  height: 40rpx;
+  display: inline-block;
+  margin: 20rpx;
+}

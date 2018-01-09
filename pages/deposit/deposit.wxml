@@ -1,0 +1,23 @@
+<!--pages/deposit/deposit.wxml-->
+<view class='container'>
+  <view class='card b-shadow depositSection'>
+    <view class='money'>
+      <text class='f-orange'>￥00.0</text>
+    </view>
+    <view class='depositDes'>
+      景点短租押金
+      <text class='f-orange'>999</text>元
+    </view>
+    <view class='moneyImg'>
+      <image src='../../images/haibao.png'></image>
+    </view>
+    <view class='backMoneyDes'>
+      在您最后一笔订单完成后<text class='f-orange'>20天</text>即可申请退还租车押金，在历次租车中未发现违章行为，押金将于
+      <text class='f-orange'>7</text>个工作日退还。 
+    </view>
+    <navigator url="../depositPay/depositPay" class='payBtn'>
+      <button class='' type="primary" hover-class="other-button-hover">缴纳押金</button>
+    </navigator> 
+  </view>
+
+</view>

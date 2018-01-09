@@ -1,0 +1,71 @@
+<!--pages/myJourney/myJourney.wxml-->
+<view class="container">
+  <!-- 我的行程 -->
+  <view class='card nearCard'>
+    <view class='nearCard-fl'>
+      <image src='../../images/car.png'></image>
+    </view>
+    <view class='nearCard-fr'>
+      <view>车牌：
+        <text class='c-green'>浙B66666</text>
+      </view>
+      <view>价格：
+        <text class='c-green'>18元</text>
+        <text>(0.3元/分钟*90分钟)</text>
+      </view>
+      <view>车型：
+        <text class='c-green'>奇瑞EQ1</text>
+      </view>
+    </view>
+  </view>
+  <!-- 租赁时间 -->
+  <view class='card nearCard'>
+    <view class='leaseTime'>
+      <text>租赁时间</text>
+    </view>
+    <view class='leaseContent'>
+      <view class='leaseTime-fl'>
+        <view class='useTime'>启用时间：
+          <text class='leaseTime-b'>12:30:23</text>
+        </view>
+        <view class='useTime'>使用时间：
+          <text class='leaseTime-b'>12:30:23</text>
+        </view>
+      </view>
+      <view class='leaseTime-fr'>
+        <button type="default" hover-class="other-button-hover">结束行程</button>
+      </view>
+    </view>
+  </view>
+
+  <!--当前位置-->
+  <view class='card nearCard'>
+    <view class='leaseTime'>
+      <text>当前位置</text>
+    </view>
+    <view class='currentPosition'>
+      <image src='../../images/position.png'></image>
+      <text class='leaseTime-b'>中山路布政巷16号科创大厦</text>
+    </view>
+  </view>
+  <!-- 故障上报 -->
+  <view class='footer-card'>
+    <navigator url='../failureToReport/failureToReport' class='fault fl ml30 block'>
+      <image src='../../images/position.png'></image>
+      <text class=''>故障上报</text>
+    </navigator>
+    <view class='fault fr mr30 block'>
+      <image src='../../images/position.png'></image>
+      <text class='phone1 block'>24小时客服热线</text>
+      <text class='phone2 block'>400-889-2502</text>
+    </view>
+  </view>
+
+  <view class='opacity-section hidden'>
+    <view class='phone-opaci'></view>
+    <view class='phone-cont'>
+      <text>400-889-2502</text>
+      <text class='phoneBtn'>拨打</text>
+    </view>
+  </view>
+</view>

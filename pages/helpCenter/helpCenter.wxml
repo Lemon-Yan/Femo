@@ -1,0 +1,57 @@
+<!--pages/helpCenter/helpCenter.wxml-->
+<view class='container'>
+
+  <!-- 数据列表 -->
+  <view class='card list-section'>
+    <view class='list-item'>
+      <text class='list-title'>常见问题</text>
+    </view>
+    <view class='list-item'>
+      <text class='list-title'>1.用车使用资格</text>
+      <image src='../../images/right-gray.png'></image>
+    </view>
+    <view class='list-item'>
+      <text class='list-title'>2.实名认证，拍照时出现错误</text>
+      <image src='../../images/right-gray.png'></image>
+    </view>
+    <view class='list-item'>
+      <text class='list-title'>3.景点短租用户如何使用车辆</text>
+      <image src='../../images/right-gray.png'></image>
+    </view>
+    <view class='list-item'>
+      <text class='list-title'>4.取车时应注意什么？</text>
+      <image src='../../images/right-gray.png'></image>
+    </view>
+
+    <view class='list-item'>
+      <text class='list-title'>5.还车时注意什么？</text>
+      <image src='../../images/right-gray.png'></image>
+    </view>
+    <view class='list-item'>
+      <text class='list-title'>6.在行驶过程中，车辆没电了怎么处理？</text>
+      <image src='../../images/right-gray.png'></image>
+    </view>
+    <view class='list-item'>
+      <text class='list-title'>7.用车出现故障怎么办</text>
+      <image src='../../images/right-gray.png'></image>
+    </view>
+    <view class='list-item'>
+      <text class='list-title'>8.怎么支付租赁费用</text>
+      <image src='../../images/right-gray.png'></image>
+    </view>
+
+    <view class='list-item'>
+      <text class='list-title'>9.景点短租押金怎么退</text>
+      <image src='../../images/right-gray.png'></image>
+    </view>
+    <view class='list-item'>
+      <text class='list-title'>10.遇到交通事故怎么处理</text>
+      <image src='../../images/right-gray.png'></image>
+    </view>
+    <view class='list-item'>
+      <text class='list-title'>11.有违章的话，谁去处理</text>
+      <image src='../../images/right-gray.png'></image>
+    </view>
+
+  </view>
+</view>

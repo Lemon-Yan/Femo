@@ -1,0 +1,18 @@
+<!--pages/mapLookCar/mapLookCar.wxml-->
+<view class='container'>
+  <view class='card'>
+    <view class='title'>
+      海曙区布政巷16号科创大厦
+    </view>
+
+    <view class="map">
+      <map show-location controls="{{controls}}" latitude="{{latitude}}" longitude="{{longitude}}" markers="{{markers}}"></map>
+    </view>
+
+    <view class='openCode'>
+      <view class='code-title'>租车扫码</view>
+      <image src='../../images/code.png'></image>
+    </view>  
+
+  </view>
+</view>

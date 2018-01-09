@@ -1,0 +1,37 @@
+<!--pages/reserve/reserve.wxml-->
+<view class='container'> 
+  <view class='card'> 
+    <view class='input-form'>
+      <view class='input-item'>
+        <text>姓名</text>
+        <input value="{{resetName}}" type="text" bindinput="bindNameInput" name="input" placeholder="请输入姓名" />
+      </view>
+      <view class='input-item'>
+        <text>联系手机</text>
+        <input  value="{{resetPhone}}" type="number" bindinput="bindPhoneInput" name="input" placeholder="请输入手机号码" />
+      </view>
+      <view class='input-item'>
+        <text>预约日期</text>
+        <picker mode="date" value="{{reserveDate}}" bindchange="bindDateChange">
+          <view class="picker">
+            {{reserveDate}}
+          </view>
+        </picker>
+      </view>
+
+      <view class='input-item remark'>
+        <text>备注</text>
+        <textarea maxlength="200"   placeholder="请输入备注" bindinput="bindNumber" />
+        <view class='number-txt'>
+          <text class='change-num'>{{txtAccount}}</text>/200
+        </view>
+      </view>
+
+    </view>
+
+    <view class='btn'>
+      <button class='bg-c' type="primary" hover-class="other-button-hover">提交</button>
+    </view>
+
+  </view>
+</view>

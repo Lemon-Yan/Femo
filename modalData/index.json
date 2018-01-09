@@ -1,0 +1,21 @@
+{
+  "stataus": "1",
+  "datas": [
+    {
+      "id": 1,
+      "imgurl": "../images/a1.jpg"
+    },
+    {
+      "id": 2,
+      "imgurl": "../images/a2.jpg"
+    },
+    {
+      "id": 3,
+      "imgurl": "../images/a3.jpg"
+    },
+    {
+      "id": 4,
+      "imgurl": "../images/a4.jpg"
+    }
+  ]
+}

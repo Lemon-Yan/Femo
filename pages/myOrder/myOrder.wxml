@@ -1,0 +1,44 @@
+<!--pages/myOrder/myOrder.wxml-->
+<view class='container'>
+  <!-- 积分 -->
+  <view class='card'>
+    <view class='card-content'>
+      <image src='../../images/bbb.jpg'></image>
+    </view>
+    <view class='avater'>
+      <image src='../../images/user.png'></image>
+    </view>
+    <view class='userInfo'>
+      <text class='clearfix'>积分：50</text>
+      <!-- <image src='../../images/right.png'></image> -->
+      <text class='clearfix'>押金：未缴纳</text>
+      <!-- <image src='../../images/right.png'></image> -->
+    </view>
+  </view>
+  <!-- 订单列表 -->
+  <view class='near'>
+    <text>订单列表</text>
+  </view>
+  <block wx:for-items="{{carInfoData}}">
+    <view class='card nearCard b-shadow'>
+      <view class='nearCard-fl'>
+        <image src='{{item.imgurl}}'></image>
+      </view>
+      <view class='nearCard-fr'>
+        <view>日期：
+          <text class='c-green'>{{item.useDate}}</text>
+        </view>
+        <view>车型：
+          <text class='c-green'>{{item.cx}}</text>
+        </view>
+        <view>时长：
+          <text class='c-green'>{{item.time}}</text>
+        </view>
+        <view>费用：
+          <text class='c-green'>{{item.feiyong}}</text>
+          <button id="invoiceBtn" class='bg-c' type="primary" hover-class="other-button-hover">开具发票</button>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>

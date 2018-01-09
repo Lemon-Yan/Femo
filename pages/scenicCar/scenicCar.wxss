@@ -1,0 +1,85 @@
+/* pages/scenicCar/scenicCar.wxss */
+
+/* 景点信息 */
+
+.card {
+  width: 95%;
+  background-color: #fff;
+  margin: 20rpx auto 0;
+  border-radius: 20rpx;
+}
+
+.carDesc {
+  padding: 10rpx;
+}
+
+.carDesc text {
+  color: #999;
+  line-height: 40rpx;
+  font-size: 22rpx;
+}
+
+.card-content image {
+  width: 100%;
+  height: 300rpx;
+  border-top-left-radius: 20rpx;
+  border-top-right-radius: 20rpx;
+}
+
+/* 附近的 */
+
+.nearCard-fl {
+  width: 40%;
+  float: left;
+}
+
+.nearCard-fl image {
+  width: 200rpx;
+  height: 200rpx;
+  padding: 8% 15%;
+}
+
+.nearCard-fr {
+  font-size: 27rpx;
+  line-height: 50rpx;
+  width: 60%;
+  margin-left: 40%;
+  margin-top: 15rpx;
+  color: #999;
+}
+
+.nearCard-fr text {
+  font-size: 22rpx;
+}
+
+.nearCard {
+  height: 240rpx;
+}
+
+.nearCard {
+  height: 240rpx;
+}
+
+/* 按钮 */
+
+button[type="primary"] {
+  color: #fff;
+  background-color: #20b3ad;
+  font-size: 26rpx;
+  margin-top: 10rpx;
+}
+
+.btnContent button {
+  display: inline-block;
+  height: 50rpx;
+  line-height: 50rpx;
+}
+
+#navBtn {
+  width: 50%;
+  margin-right:35rpx;
+}
+
+#reserveBtn {
+  width: 30%;
+}

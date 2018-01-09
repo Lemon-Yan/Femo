@@ -1,0 +1,39 @@
+<!--pages/set/set.wxml-->
+<view class='container'>
+
+  <!-- 数据列表 -->
+  <view class='card list-section'>
+    <view class='list-item'>
+      <text class='list-title'>修改登录密码</text>
+      <image src='../../images/right-gray.png'></image>
+    </view>
+    <view class='list-item'>
+      <text class='list-title'>修改绑定手机</text>
+      <image src='../../images/right-gray.png'></image>
+    </view>
+    <view class='list-item'>
+      <text class='list-title'>用户协议</text>
+      <image src='../../images/right-gray.png'></image>
+    </view>
+    <view class='list-item'>
+      <text class='list-title'>客服热线</text>
+      <image src='../../images/right-gray.png'></image>
+    </view>
+    <view class='list-item'>
+      <text class='list-title'>意见反馈</text>
+      <image src='../../images/right-gray.png'></image>
+    </view>
+    <view class='list-item'>
+      <text class='list-title'>关于我们</text>
+      <image src='../../images/right-gray.png'></image>
+    </view>
+    <view class='list-item'>
+      <text class='list-title'>清空缓存</text>
+      <image src='../../images/right-gray.png'></image>
+    </view>
+    <view class='btn'>
+      <button class='bg-c' type="primary" hover-class="other-button-hover">退出登录</button>
+    </view>
+
+  </view>
+</view>

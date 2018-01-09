@@ -1,0 +1,52 @@
+/* pages/depositPay/depositPay.wxss */
+.card {
+  width: 95%;
+  background-color: white;
+  border-radius: 20rpx;
+  margin: 20rpx 0 0 0;
+  text-align: center;
+}
+
+.money text {
+  font-size: 60rpx;
+  line-height: 140rpx;
+}
+
+.depositDes {
+  font-size: 26rpx;
+  color: #999;
+  margin: 20rpx auto;
+}
+
+.f-orange {
+  color: orange !important;
+}
+
+.moneyImg {
+  padding: 0 10rpx;
+}
+
+.moneyImg image {
+  width: 100%;
+  height: 600rpx;
+}
+
+.backMoneyDes, backMoneyDes text {
+  text-align: left;
+  margin: 20rpx;
+  font-size: 24rpx;
+  color: #999;
+  line-height: 50rpx;
+}
+
+/* 按钮 */
+
+button[type="primary"] {
+  color: #fff;
+  background-color: #f3ca1e;
+  font-size: 26rpx;
+  margin-top: 10rpx;
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+  height: 80rpx;
+}

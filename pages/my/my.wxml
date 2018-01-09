@@ -1,0 +1,42 @@
+<!--pages/my/my.wxml-->
+<view class='container'>
+  <view class='card'>
+    <view class='card-content'>
+      <image src='../../images/bbb.jpg'></image>
+    </view>
+    <view class='avater'>
+      <image src='../../images/user.png'></image>
+    </view>
+    <view class='userInfo'>
+      <text>会员号：11422586872544</text>
+    </view>
+  </view>
+
+  <!-- 订单、押金 -->
+  <view class='middleContent b-shadow'>
+    <navigator class='inline-blok order' url="../myOrder/myOrder">
+      <text>订单总览</text>
+      <image src='../../images/position.png'></image>
+    </navigator>
+    <navigator class='inline-blok money' url="../deposit/deposit">
+      <text>押金</text>
+      <text class='t-orange'>未缴纳</text>
+    </navigator>
+  </view>
+
+  <!-- 九宫格 -->
+  <view class="navlist gridCard clearfix b-shadow">
+    <block wx:for-items="{{jiuData}}">
+      <navigator url="{{item.pageUrl}}">
+        <image src="{{item.imgurl}}" alt=""></image>
+        <text>{{item.title}}</text>
+      </navigator>
+    </block>
+  </view>
+
+  <view class='bg-c phone'>
+    <image src='../../images/phone.png'></image>
+    <text>客服热线</text>
+    <text>400-889-2502</text>
+  </view>
+</view>

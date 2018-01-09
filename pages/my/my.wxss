@@ -1,0 +1,145 @@
+/* pages/my/my.wxss */
+
+.card {
+  width: 95%;
+  background-color: #fff;
+  margin: 20rpx auto 0;
+  border-radius: 20rpx;
+  position: relative;
+}
+
+.card-content image {
+  width: 100%;
+  height: 325rpx;
+  border-radius: 20rpx;
+}
+
+/*九宫格begin*/
+
+.navlist {
+  background-color: white;
+}
+
+.navlist navigator {
+  width: 33.1%;
+  float: left;
+  display: block;
+  text-align: center;
+  border-bottom: solid #e4e4e4 1px;
+  border-right: solid 1px #e4e4e4;
+}
+
+.navlist navigator:last-child {
+  border-bottom: none;
+}
+
+.navlist navigator:nth-child(3n+3) {
+  border-right: none;
+}
+
+.navlist navigator text {
+  font-size: 26rpx;
+  color: #999;
+  padding: 20rpx;
+  display: inline-block;
+}
+
+.navlist image {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 0 auto;
+  padding: 60rpx 0 0;
+}
+
+/*九宫格end*/
+
+.gridCard {
+  width: 95%;
+  border-radius: 20rpx;
+  margin-top: 20rpx;
+}
+
+/* 头像 */
+
+.avater {
+  width: 125rpx;
+  height: 125rpx;
+  position: absolute;
+  top: 20%;
+  left: 38%;
+  z-index: 99;
+  border-radius: 50%;
+  border: solid #89888c 2px;
+}
+
+.avater image {
+  width: 100%;
+  height: 100%;
+}
+
+.userInfo {
+  position: absolute;
+  top: 73%;
+  left: 27%;
+  z-index: 99;
+}
+
+.userInfo text {
+  font-size: 24rpx;
+  color: white;
+}
+
+/* 订单和押金 */
+
+.middleContent {
+  width: 95%;
+  background-color: white;
+  border-radius: 20rpx;
+  margin-top: 20rpx;
+}
+
+.middleContent text {
+  font-size: 28rpx;
+  color: #999;
+  padding: 40rpx;
+  line-height: 100rpx;
+}
+
+.inline-blok {
+  width: 49.5%;
+}
+
+.order {
+  border-right: solid #e4e4e4 1px;
+}
+
+.order image {
+  width: 45rpx;
+  height: 45rpx;
+  display: inline-block;
+  margin: 20rpx 0 0 20rpx;
+}
+
+/* 客服热线 */
+
+.phone {
+  width: 35% !important;
+  text-align: center;
+  margin: 30rpx auto;
+  border-radius: 20rpx;
+  box-shadow: 10rpx 10rpx 30rpx #999, -5rpx -5rpx 30rpx #999;
+}
+
+.phone image {
+  width: 64rpx;
+  height: 54rpx;
+  float: left;
+  padding: 10px 0 0 10px;
+}
+
+.phone text {
+  display: block;
+  font-size: 22rpx;
+  color: #fff;
+  line-height: 45rpx;
+}

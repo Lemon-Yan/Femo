@@ -1,0 +1,20 @@
+<!--pages/appearance/appearance.wxml-->
+<view class='container'>
+  <!-- 头部选择切换 -->
+  <view class='headerSelect'>
+    <view class='headerSelect-item'>全部</view>
+    <view class='headerSelect-item'>外观</view>
+    <view class='headerSelect-item'>内饰</view>
+    <view class='headerSelect-item'>空间</view>
+    <view class='headerSelect-item'>其它</view>
+  </view>
+  <!-- 图片列表 -->
+  <view class="appearanceContain  clearfix">
+    <block wx:for-items="{{jiuData}}">
+      <view class='imgContain'>
+        <image src="{{item.imgurl}}" alt=""></image>
+      </view>
+    </block>
+  </view>
+
+</view>

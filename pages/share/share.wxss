@@ -1,0 +1,65 @@
+/* pages/share/share.wxss */
+
+.card-content image {
+  width: 100%;
+  height: 500rpx;
+  border-top-left-radius: 20rpx;
+  border-top-right-radius: 20rpx;
+}
+
+/* 分享描述文本 */
+
+.share-txt {
+  font-size: 32rpx;
+  font-weight: 600;
+  text-align: center;
+  padding: 30rpx 0;
+}
+
+.share-txt2 {
+  font-size: 38rpx;
+  font-weight: 700;
+  text-align: center;
+}
+
+/*九宫格begin*/
+
+.navlist {
+  overflow: hidden;
+}
+
+.navlist navigator {
+  width: 25%;
+  float: left;
+  display: block;
+  text-align: center;
+}
+
+.navlist navigator text {
+  font-size: 26rpx;
+  color: #999;
+  padding: 20rpx;
+  display: inline-block;
+}
+
+.navlist image {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 0 auto;
+  padding: 60rpx 0 0;
+}
+
+/*九宫格end*/
+
+.ruleDetail {
+  font-size: 26rpx;
+  color: #999;
+  text-align: center;
+  padding: 35rpx 0;
+}
+
+.ruleDetail image {
+  width: 40rpx;
+  height: 40rpx;
+  display: inline-block;
+}

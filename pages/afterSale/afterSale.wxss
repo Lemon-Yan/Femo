@@ -1,0 +1,20 @@
+/* pages/afterSale/afterSale.wxss */
+
+/* 列表 */
+
+.list-item {
+  border-bottom: solid #e4e4e4 1px;
+  text-align: left;
+  padding: 20rpx 40rpx;
+}
+
+.list-title {
+  margin: 0 0 0 10rpx;
+}
+
+.list-item text {
+  font-size: 26rpx;
+  color: #999;
+  line-height: 55rpx;
+  display: block;
+}

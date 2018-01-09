@@ -1,0 +1,46 @@
+/* pages/appearance/appearance.wxss */
+
+/*九宫格begin*/
+
+.appearanceContain {
+  background-color: white;
+  padding-top: 0.65rem;
+  margin-top: 20rpx;
+}
+
+.imgContain {
+  width: 33.3%;
+  float: left;
+  margin-bottom: 0.65rem;
+  display: block;
+}
+
+.imgContain image {
+  width: 6rem;
+  height: 4rem;
+  margin: 0 auto;
+}
+
+/*九宫格end*/
+
+/* 顶部选择 */
+
+.headerSelect {
+  width: 100%;
+  background-color: #fff;
+  overflow: hidden;
+  height: 1.5rem;
+}
+
+.headerSelect-item {
+  font-size: 26rpx;
+  text-align: center;
+  display: inline-block;
+  width: 19.7%;
+  border-right: solid #E4E4E4 1px;
+  height: 1.5rem;
+  line-height: 1.5rem;
+}
+.headerSelect-item:last-child{
+  border-right: none;
+}

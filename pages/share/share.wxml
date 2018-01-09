@@ -1,0 +1,31 @@
+<!--pages/share/share.wxml-->
+<view class='container'>
+
+  <view class='card b-shadow'>
+    <view class='card-content'>
+      <image src='../../images/haibao.png'></image>
+    </view>
+
+    <view class='share-txt'>
+      邀请好友，好友与你各得
+    </view>
+    <view class='share-txt2'>
+      5张1元用车卷
+    </view>
+
+    <view class="navlist">
+      <block wx:for-items="{{jiuData}}">
+        <navigator url="{{item.pageUrl}}">
+          <image src="{{item.imgurl}}" alt=""></image>
+          <text>{{item.title}}</text>
+        </navigator>
+      </block>
+    </view>
+
+    <view class='ruleDetail'>
+      查看詳細规则
+      <image src='../../images/right-gray.png'></image>
+    </view>
+
+  </view>
+</view>

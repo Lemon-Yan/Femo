@@ -1,0 +1,54 @@
+<!--pages/memberCenter/memberCenter.wxml-->
+<view class='container'>
+  <view class='card'>
+    <!-- 头像 -->
+    <view class='avaterContent'>
+      <view class='card-content'>
+        <image src='../../images/bbb.jpg'></image>
+      </view>
+      <view class='avater'>
+        <image src='../../images/user.png'></image>
+      </view>
+      <view class='userInfo'>
+        <text>会员号：11422586872544</text>
+      </view>
+    </view>
+    <!-- 个人信息 -->
+    <view class='personInfo'>
+      <view class='infoList'>
+        <text class='list-title'>姓名：</text>
+        <text class='list-content'>张一男</text> 
+      </view>
+      <view class='infoList'>
+        <text class='list-title'>性别：</text>
+        <text class='list-content'>男</text> 
+      </view>
+      <view class='infoList'>
+        <text class='list-title'>生日：</text>
+        <text class='list-content'>1998-11-13</text>
+        <image src='../../images/right-b.png'></image>
+      </view>
+      <view class='infoList'>
+        <text class='list-title'>住址：</text>
+        <text class='list-content'>浙江省宁波市海曙区布政巷16号科创大厦11楼</text>
+        <image src='../../images/right-b.png'></image>
+      </view>
+      <view class='infoList'>
+        <text class='list-title'>手机：</text>
+        <text class='list-content'>13800000000</text>
+        <image src='../../images/right-b.png'></image>
+      </view>
+      <view class='infoList'>
+        <text class='list-title'>邮箱：</text>
+        <text class='list-content'>123456789@qq.com</text>
+        <image src='../../images/right-b.png'></image>
+      </view>
+      <navigator url='../realName/realName' class='infoList'>
+        <text class='list-title'>实名认证：</text>
+        <text class='list-content'>未认证</text>
+        <image src='../../images/right-b.png'></image>
+      </navigator>
+
+    </view> 
+  </view> 
+</view>
