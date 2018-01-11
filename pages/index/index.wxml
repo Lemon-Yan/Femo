@@ -1,6 +1,5 @@
-<!--index.wxml-->
+<!--index.wxml--> 
 <view class="container">
-
   <!-- 头部 -->
   <view class='header'>
     <navigator url="../mapLookCar/mapLookCar" class='h-fl h-content'>
@@ -19,25 +18,22 @@
   </view>
 
   <!--轮播图-->
-  <swiper class="home-swiper" indicator-dots="true" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
-    <block wx:for-items="{{lunboData}}">
-      <swiper-item>
-        <image src="{{item.imgurl}}" class="slide-image" />
-      </swiper-item>
-    </block>
-  </swiper>
+  <view class='clearfix modalInit'>
+    <!-- 调用轮播图组件 -->
+    <carousel modal-carousel="{{lunboData}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" />
+  </view>
 
   <!-- 景区租车卡片 -->
   <view class='card b-shadow'>
     <view class='card-title'>景区租车</view>
     <navigator url='../scenicCar/scenicCar' class='card-content'>
-      <image src='../../images/haibao.png'></image>
+      <image src='../../images/cc.png'></image>
     </navigator>
   </view>
   <view class='card b-shadow'>
     <view class='card-title'>长租试驾</view>
     <navigator url='../scenicCar/scenicCar' class='card-content'>
-      <image src='../../images/haibao.png'></image>
+      <image src='../../images/cc.png'></image>
     </navigator>
   </view>
 
@@ -46,26 +42,10 @@
     <text>附近车辆</text>
   </view>
 
-  <block wx:for-items="{{carInfoData}}">
-    <navigator class='card nearCard b-shadow' url='../carRental/carRental'>
-      <view class='nearCard-fl'>
-        <image src='{{item.imgurl}}'></image>
-      </view>
-      <view class='nearCard-fr'>
-        <view>价格：
-          <text class='c-green'>{{item.price}}</text>
-        </view>
-        <view>电量：
-          <text class='c-green'>{{item.dianliang}}</text>
-        </view>
-        <view>距离：
-          <text class='c-green'>{{item.juli}}</text>
-        </view>
-        <view>位置：
-          <text class='c-green'>{{item.position}}</text>
-        </view>
-      </view>
-    </navigator>
-  </block>
-
+  <!-- 调用modal组件 -->
+  <!-- <modal-success modal-hidden="{{is_modal_Hidden}}" modal-icon="{{is_modal_icon}}" modal-title="{{is_modal_title}}" modal-desc="{{is_modal_desc}}" /> -->
+  <!-- 卡片列表组件  说明：modal-card是数据表；modal-page是模板样式：1首页模板，2租赁页的模板，3景区租车模板；modal-pageurl跳转的页面 -->
+  <view class='clearfix modalInit'>
+    <card-list modal-card="{{carInfoData}}" modal-page="{{1}}" modal-pageurl="{{'../carRental/carRental'}}" />
+  </view>
 </view>

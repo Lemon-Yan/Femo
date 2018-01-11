@@ -1,0 +1,84 @@
+/* pages/feedBack/feedBack.wxss */
+
+.remark {
+  position: relative;
+}
+
+.number-txt {
+  position: absolute;
+  top: 88%;
+  right: 6%;
+  z-index: 2;
+  font-size: 24rpx;
+  color: #999;
+}
+
+.number-txt text {
+  font-size: 24rpx;
+  color: #999;
+}
+
+.input-item {
+  padding: 0 40rpx;
+}
+
+.input-item text {
+  font-size: 26rpx;
+  color: #999;
+  line-height: 60rpx;
+}
+
+.input-item input, textarea {
+  border: solid #e4e4e4 1px;
+  padding: 10rpx;
+  margin: 10rpx 0;
+  font-size: 26rpx;
+  width: 97%;
+}
+
+.btn {
+  margin: 50rpx 0 0 0;
+}
+
+/* 按钮 */
+
+button[type="primary"] {
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+}
+
+/* 浮窗 */
+
+.modal-opaci {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  height: 100%;
+  width: 100%;
+  background: black;
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+}
+
+.modal-cont {
+  position: fixed;
+  top: 30%;
+  left: 8.5%;
+  z-index: 999;
+  border-radius: 20rpx;
+  padding: 40rpx 150rpx;
+  background-color: #fff;
+  text-align: center;
+}
+
+.modal-cont text {
+  line-height: 90rpx; 
+  display: block;
+}
+
+.success-status {
+  font-size: 50rpx;
+  font-weight: 700;
+  color: #09BB07;
+}

@@ -24,7 +24,7 @@
   right: 17%;
   z-index: 99;
   border-radius: 50%;
-  border: solid #89888c 2px;
+  border: solid #e4e4e4 1px;
 }
 
 .avater image {
@@ -36,15 +36,15 @@
   position: absolute;
   top: 25%;
   left: 17%;
-  z-index: 99;
-  font-size: 28rpx;
-  color: white;
+  z-index: 99; 
 }
 
 .userInfo text {
   display: block;
   float: left;
   margin-top: 20rpx;
+   font-size: 28rpx;
+  color: white;
 }
 
 .userInfo image {

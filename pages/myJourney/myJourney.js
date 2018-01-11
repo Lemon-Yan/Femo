@@ -5,66 +5,88 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+
   },
-// 返回上一页面
-  backPage:function(){ 
-   wx.navigateBack({});
+  //打开拨打客服热线模态框
+  openModal: function () {
+    var servicePhone = "400-889-2502";
+    wx.showModal({
+      title: '提示',
+      content: '确定拨打客服热线：' + servicePhone,
+      success: function (res) {
+        if (res.confirm) {
+          console.log('用户点击确定');
+          //拨打电话
+          wx.makePhoneCall({
+            phoneNumber: servicePhone,
+            success: function () {
+              console.log("成功拨打电话")
+            }
+          })
+        } else if (res.cancel) {
+          console.log('用户点击取消');
+        }
+      }
+    })
+  },
+  // 返回上一页面
+  backPage: function () {
+    wx.navigateBack({});
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-  
+
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-  
+
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
-  
+
   },
 
   /**
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-  
+
   },
 
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-  
+
   },
 
   /**
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
-  
+
   },
 
   /**
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-  
+
   }
 })

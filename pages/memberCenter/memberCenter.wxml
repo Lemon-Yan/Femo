@@ -4,7 +4,7 @@
     <!-- 头像 -->
     <view class='avaterContent'>
       <view class='card-content'>
-        <image src='../../images/bbb.jpg'></image>
+        <image src='../../images/aaa.jpg'></image>
       </view>
       <view class='avater'>
         <image src='../../images/user.png'></image>

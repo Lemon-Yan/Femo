@@ -23,7 +23,11 @@
     "pages/helpCenter/helpCenter",
     "pages/reserve/reserve",
     "pages/failureToReport/failureToReport",
-    "pages/mapLookCar/mapLookCar"
+    "pages/mapLookCar/mapLookCar",
+    "pages/aboutUs/aboutUs",
+    "pages/feedBack/feedBack",
+    "component/successModal/successModal",
+    "component/cardList/cardList"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -33,7 +37,7 @@
   },
   "tabBar": {
     "selectedColor": "#20B3AD",
-    "color": "#999999",
+    "color": "#999",
     "borderStyle": "white",
     "backgroundColor": "#F0F0F0",
     "list": [
@@ -46,8 +50,8 @@
       {
         "text": "租赁",
         "pagePath": "pages/lease/lease",
-        "iconPath": "images/rent.png",
-        "selectedIconPath": "images/rentSelected.png"
+        "iconPath": "images/lease.png",
+        "selectedIconPath": "images/leaseSelected.png"
       },
       {
         "text": "预售",

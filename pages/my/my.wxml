@@ -2,13 +2,13 @@
 <view class='container'>
   <view class='card'>
     <view class='card-content'>
-      <image src='../../images/bbb.jpg'></image>
+      <image src='../../images/aaa.jpg'></image>
     </view>
     <view class='avater'>
       <image src='../../images/user.png'></image>
     </view>
     <view class='userInfo'>
-      <text>会员号：11422586872544</text>
+      <text>用户昵称：小鱼儿与花无缺</text>
     </view>
   </view>
 
@@ -16,7 +16,7 @@
   <view class='middleContent b-shadow'>
     <navigator class='inline-blok order' url="../myOrder/myOrder">
       <text>订单总览</text>
-      <image src='../../images/position.png'></image>
+      <image src='../../images/order.png'></image>
     </navigator>
     <navigator class='inline-blok money' url="../deposit/deposit">
       <text>押金</text>
@@ -34,8 +34,8 @@
     </block>
   </view>
 
-  <view class='bg-c phone'>
-    <image src='../../images/phone.png'></image>
+  <view class='phone b-shadow' bindtap='openModal'>
+    <image src='../../images/service.png'></image>
     <text>客服热线</text>
     <text>400-889-2502</text>
   </view>

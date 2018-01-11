@@ -1,47 +1,28 @@
 <!--pages/lease.wxml-->
 <view class="container">
- <!--轮播图-->
-  <swiper class="home-swiper" indicator-dots="true" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
-    <block wx:for-items="{{lunboData}}">
-      <swiper-item>
-        <image src="{{item.imgurl}}" class="slide-image" />
-      </swiper-item>
-    </block>
-  </swiper>
-   <!-- 景点租车 -->
+  <!--轮播图-->
+  <view class='clearfix modalInit mt30'>
+    <!-- 调用轮播图组件 -->
+    <carousel modal-carousel="{{lunboData}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" />
+  </view>
+
+  <!-- 景点租车 -->
   <view class='near'>
     <text>景点租车</text>
   </view>
+
   <view class='card b-shadow'>
     <navigator url="../scenicCar/scenicCar" class='card-content'>
       <image src='../../images/haibao.png'></image>
     </navigator>
   </view>
-   
-   <!-- 长租 -->
+
+  <!-- 长租 -->
   <view class='near'>
     <text>长租</text>
-  </view>
-  <block wx:for-items="{{carInfoData}}">
-    <navigator class='card nearCard b-shadow' url='../carInfo/carInfo'>
-      <view class='nearCard-fl'>
-        <image src='{{item.imgurl}}'></image>
-      </view>
-      <view class='nearCard-fr'>
-        <view>车辆价格：
-          <text class='c-green'>{{item.price}}</text>
-        </view>
-        <view>续航里程：
-          <text class='c-green'>{{item.lc}}</text>
-        </view>
-        <view>车身结构：
-          <text class='c-green'>{{item.csjg}}</text>
-        </view>
-        <view>充电时长：
-          <text class='c-green'>{{item.cdsc}}</text>
-        </view>
-      </view>
-    </navigator>
-  </block>
-
+  </view> 
+  <!-- 卡片列表组件  说明：modal-card是数据表；modal-page是模板样式：1首页模板，2租赁页的模板；modal-pageurl跳转的页面 -->
+  <view class='clearfix modalInit'>
+    <card-list modal-card="{{carInfoData}}" modal-page="{{2}}" modal-pageurl="{{'../carInfo/carInfo'}}" />
+  </view> 
 </view>

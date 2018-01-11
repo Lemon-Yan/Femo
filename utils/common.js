@@ -25,7 +25,7 @@ var common = {
         callBack(res);
       },
       fail: function (res) {
-        console("error res=" + res.data);
+        //console("error res=" + res.data);
       }
     })
   }

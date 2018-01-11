@@ -1,0 +1,121 @@
+/* 公共css */
+
+.modalInit {
+  width: 100%;
+  overflow: hidden;
+}
+
+/*图片大小自适应*/
+
+image {
+  width: 100%;
+  height: 100%;
+  vertical-align: top;
+  display: block;
+}
+
+/*清除浮动样式*/
+
+.clearfix {
+  zoom: 1;
+  clear: both;
+}
+
+.clearfix:after {
+  display: block;
+  height: 0;
+  overflow: hidden;
+  content: " ";
+  visibility: hidden;
+  clear: both;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.hidden {
+  display: none;
+}
+
+.block {
+  display: block;
+}
+
+.inline-blok {
+  display: inline-block !important;
+}
+
+.mt30 {
+  margin-top: 30rpx;
+}
+
+.mb30 {
+  margin-bottom: 30rpx;
+}
+
+.mr30 {
+  margin-right: 30rpx;
+}
+
+.ml30 {
+  margin-left: 30rpx;
+}
+
+text {
+  font-size: 32rpx;
+}
+
+.c-green {
+  color: #46bd86;
+}
+
+.bg-c {
+  background-color: #20b3ad !important;
+}
+
+.t-orange {
+  color: orange !important;
+}
+
+.b-shadow {
+  box-shadow: 10rpx 10rpx 20rpx #999;
+}
+
+.card {
+  width: 95%;
+  background-color: white;
+  border-radius: 20rpx;
+  margin: 20rpx 0 0 0;
+  position: relative;
+}
+
+/* 景区租车卡片 */
+
+.card-title {
+  color: #6ec8c5;
+  line-height: 65rpx;
+  margin: 0 0 0 15rpx;
+}
+
+.card-content image {
+  width: 100%;
+  height: 300rpx;
+  border-bottom-left-radius: 20rpx;
+  border-bottom-right-radius: 20rpx;
+}
+
+/* 附近的车卡片*/
+
+.near {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin: 20rpx 0 0 0;
+}
+
+

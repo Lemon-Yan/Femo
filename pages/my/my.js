@@ -18,39 +18,39 @@ Page({
       "datas": [
         {
           "id": 2,
-          "imgurl": "../../images/position.png",
+          "imgurl": "../../images/userInfo.png",
           "pageUrl":"../memberCenter/memberCenter",
-          "title":"会员中心"
+          "title":"个人信息"
         },
         {
           "id": 1,
-          "imgurl": "../../images/position.png",
+          "imgurl": "../../images/youhuiquan.png",
           "pageUrl": "../shopping/shopping",
-          "title": "肥猫商城"
+          "title": "优惠券"
         },
         {
           "id": 3,
-          "imgurl": "../../images/position.png",
+          "imgurl": "../../images/saleService.png",
           "pageUrl": "../afterSale/afterSale",
           "title": "售后服务"
         },
         {
           "id": 1,
-          "imgurl": "../../images/position.png",
-          "pageUrl": "../share/share",
-          "title": "邀请"
-        },
+          "imgurl": "../../images/about.png",
+          "pageUrl": "../aboutUs/aboutUs",
+          "title": "关于我们"
+        }, 
         {
           "id": 1,
-          "imgurl": "../../images/position.png",
-          "pageUrl": "../set/set",
-          "title": "设置"
-        },
-        {
-          "id": 1,
-          "imgurl": "../../images/position.png",
+          "imgurl": "../../images/help.png",
           "pageUrl": "../helpCenter/helpCenter",
           "title": "帮助中心"
+        },
+        {
+          "id": 1,
+          "imgurl": "../../images/email.png",
+          "pageUrl": "../feedBack/feedBack",
+          "title": "意见反馈"
         } 
       ]
     };
@@ -60,6 +60,28 @@ Page({
       jiuData: data.datas
     })
   },
+  //打开拨打客服热线模态框
+  openModal: function () {
+    var servicePhone = "400-889-2502";
+    wx.showModal({
+      title: '提示',
+      content: '确定拨打客服热线：' + servicePhone,
+      success: function (res) {
+        if (res.confirm) {
+          console.log('用户点击确定');
+          //拨打电话
+          wx.makePhoneCall({
+            phoneNumber: servicePhone,
+            success: function () {
+              console.log("成功拨打电话")
+            }
+          })
+        } else if (res.cancel) {
+          console.log('用户点击取消');
+        }
+      }
+    })
+  },  
 
   /**
    * 生命周期函数--监听页面初次渲染完成

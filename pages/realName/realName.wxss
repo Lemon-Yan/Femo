@@ -1,40 +1,75 @@
 /* pages/realName/realName.wxss */
-.container{
-  margin-bottom:20rpx;
+
+.toggleBtn {
+  text-align: center;
+  background-color: #f9f9fb;
+  border-top-left-radius: 20rpx;
+  border-top-right-radius: 20rpx;
 }
-.toggleBtn text {
+
+.authStatus {
+  position: relative;
+}
+
+.step1 {
+  color: orange;
+  border: solid orange 1px;
+  border-radius: 50%;
+  margin-right: 160rpx;
   font-size: 26rpx;
+  display: inline-block;
+  width: 35rpx;
+  height: 35rpx;
+}
+
+.step2 {
+  color: gray;
+  border: solid #e4e4e4 1px;
+  border-radius: 50%;
+  display: inline-block;
+  width: 35rpx;
+  height: 35rpx;
+  font-size: 26rpx;
+}
+
+.step1::before {
+  position: absolute;
+  z-index: 2;
+  top: 55%;
+  left: 38.5%;
+  content: "";
+  border-top: solid #efeff1 2px;
+  width: 24%;
+}
+
+.complete {
+  color: orange;
+  border: solid orange 1px;
+}
+
+.complete::before {
+  position: absolute;
+  z-index: 2;
+  top: 55%;
+  left: 38%;
+  content: "";
+  border-top: solid orange 2px;
+  width: 24%;
+}
+
+.authTxt text {
+  font-size: 22rpx;
   color: #999;
-  padding: 10rpx;
-  line-height: 50rpx;
-  margin-right: 35rpx;
+  margin: 0 30rpx;
 }
 
 .upload {
-  border-top: solid #e4e4e4 1px;
-  border-bottom: solid #e4e4e4 1px;
-}
-
-.active {
-  background-color: #20b3ad;
-  color: white !important;
-}
-
-.imgDes text {
-  font-size: 24rpx;
-  color: #999;
-}
-
-.imgContent image {
-  width: 280rpx;
-  height: 200rpx;
-  display: inline-block;
-  margin-right: 15rpx;
+  position: relative;
 }
 
 .selectImg image {
   width: 100%;
-  height: 300rpx;
+  height: 400rpx;
 }
 
 .uploadDes text {
@@ -45,22 +80,30 @@
 }
 
 .padd {
-  padding: 15rpx 40rpx 0 40rpx;
+  padding: 20rpx;
 }
 
-.other {
-  margin-left: 245rpx;
+.camera {
+  position: absolute;
+  top: 160rpx;
+  left: 45%;
+  z-index: 2;
+  width: 100rpx;
+  height: 100rpx;
+  background-color: #fff;
+  border-radius: 50%;
 }
 
-.sampleOther {
-  margin-left: 175rpx;
+.camera image {
+  width: 100%;
+  height: 100%;
 }
 
-.sample {
-  padding: 0 0 20rpx 0;
-  border-bottom: solid #e4e4e4 1px;
-}
+/* 按钮 */
 
-.btn {
-  padding: 15rpx;
+button[type="primary"] {
+  color: #fff;
+  background-color: #3b3b3b;
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
 }

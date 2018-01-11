@@ -1,5 +1,5 @@
 /**app.wxss**/
-
+@import "css/common.wxss";
 page {
   min-height: 100%;
   background-color: #e4e4e4;
@@ -12,95 +12,6 @@ page {
   align-items: center;
   justify-content: space-between;
   box-sizing: border-box;
-  margin-bottom:20rpx;
+  margin-bottom:30rpx;
 }
 
-/*图片大小自适应*/
-
-image {
-  width: 100%;
-  height: 100%;
-  vertical-align: top;
-  display: block;
-}
-
-/*清除浮动样式*/
-
-.clearfix {
-  zoom: 1;
-  clear: both;
-}
-
-.clearfix:after {
-  display: block;
-  height: 0;
-  overflow: hidden;
-  content: " ";
-  visibility: hidden;
-  clear: both;
-}
-
-.fl {
-  float: left;
-}
-
-.fr {
-  float: right;
-}
-
-.hidden {
-  display: none;
-}
-
-.block {
-  display: block;
-}
-
-.inline-blok {
-  display: inline-block !important;
-}
-
-.mt30 {
-  margin-top: 30rpx;
-}
-
-.mb30 {
-  margin-bottom: 30rpx;
-}
-
-.mr30 {
-  margin-right: 30rpx;
-}
-
-.ml30 {
-  margin-left: 30rpx;
-}
-
-text {
-  font-size: 32rpx;
-  color:#999;
-}
-
-.c-green {
-  color: #46bd86;
-}
-
-.bg-c {
-  background-color: #20b3ad !important;
-}
-
-.t-orange {
-  color: orange !important;
-}
-
-.b-shadow {
-  box-shadow: 10rpx 10rpx 20rpx #999;
-}
-
-.card {
-  width: 95%;
-  background-color: white;
-  border-radius: 20rpx;
-  margin: 20rpx 0 0 0;
-  position: relative;
-}

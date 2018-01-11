@@ -1,3 +1,6 @@
 {
+  "usingComponents": {
+    "card-list": "../../component/cardList/cardList"
+  },
   "navigationBarTitleText": "预售"
 }

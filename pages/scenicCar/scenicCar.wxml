@@ -3,7 +3,7 @@
   <!-- 景点信息 -->
   <view class='card b-shadow'>
     <view class='card-content'>
-      <image src='../../images/haibao.png'></image>
+      <image src='../../images/cc.png'></image>
     </view>
     <view class='carDesc'>
       <text>舟山市是我国第一个以群岛建制的地级市，隶属于浙江省，地处中国东部黄金海岸线与长江黄金水道的交汇处，背靠长三角广阔经济腹地。</text>
@@ -11,7 +11,7 @@
   </view>
 
   <!-- 景点车辆信息 -->
-  <block wx:for-items="{{carInfoData}}">
+  <!-- <block wx:for-items="{{carInfoData}}">
     <view class='card nearCard b-shadow'>
       <view class='nearCard-fl'>
         <image src='{{item.imgurl}}'></image>
@@ -32,5 +32,17 @@
         </view>
       </view>
     </view>
-  </block>
+  </block> -->
+
+  <!-- 卡片列表组件  说明：modal-card是数据表；modal-page是模板样式：1首页模板，2租赁页的模板；modal-pageurl跳转的页面 -->
+  <view class='clearfix modalInit'>
+    <card-list modal-card="{{carInfoData}}" modal-page="{{3}}">
+      <!-- 使用多个slot，把按钮插入指定位置 -->
+      <view class='btnContent' wx:for="{{carInfoData}}" slot="scenicBtn{{index}}">
+        <button id="navBtn" class='bg-c' type="primary" hover-class="other-button-hover">导航到目的地</button>
+        <button id="reserveBtn" bindtap="openReserve" class='bg-c' type="primary" hover-class="other-button-hover">预定</button>
+      </view>
+    </card-list>
+  </view>
+
 </view>

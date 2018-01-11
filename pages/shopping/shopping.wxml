@@ -1,8 +1,8 @@
 <!--pages/shopping/shopping.wxml-->
 <view class="container">
-  <navigator url='../cc/cc' class='card b-shadow'>
+  <navigator url='../share/share' class='card b-shadow'>
     <view class='card-img'>
-      <image src='../../images/bbb.jpg'></image>
+      <image src='../../images/timg.jpg'></image>
     </view>
     <view class='card-txt'>
       <view class='item-title'>
@@ -16,9 +16,9 @@
     </view>
   </navigator>
 
-  <navigator url='../cc/cc' class='card b-shadow'>
+  <navigator url='../share/share' class='card b-shadow'>
     <view class='card-img'>
-      <image src='../../images/bbb.jpg'></image>
+      <image src='../../images/timg.jpg'></image>
     </view>
     <view class='card-txt'>
       <view class='item-title'>
@@ -32,9 +32,9 @@
     </view>
   </navigator>
 
-  <navigator url='../cc/cc' class='card b-shadow'>
+  <navigator url='../share/share' class='card b-shadow'>
     <view class='card-img'>
-      <image src='../../images/bbb.jpg'></image>
+      <image src='../../images/timg.jpg'></image>
     </view>
     <view class='card-txt'>
       <view class='item-title'>

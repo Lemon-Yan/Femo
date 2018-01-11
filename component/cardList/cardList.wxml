@@ -1,0 +1,51 @@
+<!--component/cardList/cardList.wxml-->
+<block wx:for="{{modalCard}}">
+  <navigator class='card nearCard b-shadow' url='{{modalPageurl}}'>
+    <view class='nearCard-fl'>
+      <image src='{{item.imgurl}}'></image>
+    </view>
+    <!-- 首页模板样式 -->
+    <view class='nearCard-fr' wx:if="{{modalPage==1}}">
+      <view>价格：
+        <text class='c-green'>{{item.price}}</text>
+      </view>
+      <view>电量：
+        <text class='c-green'>{{item.dianliang}}</text>
+      </view>
+      <view>距离：
+        <text class='c-green'>{{item.juli}}</text>
+      </view>
+      <view>位置：
+        <text class='c-green'>{{item.position}}</text>
+      </view>
+    </view>
+    <!-- 租赁和预售模板 -->
+    <view class='nearCard-fr' wx:if="{{modalPage==2}}">
+      <view>车辆价格：
+        <text class='c-green'>{{item.price}}</text>
+      </view>
+      <view>续航里程：
+        <text class='c-green'>{{item.lc}}</text>
+      </view>
+      <view>车身结构：
+        <text class='c-green'>{{item.csjg}}</text>
+      </view>
+      <view>充电时长：
+        <text class='c-green'>{{item.cdsc}}</text>
+      </view>
+    </view>
+    <!-- 景点租车模板 -->
+    <view class='nearCard-fr' wx:if="{{modalPage==3}}">
+      <view>车牌：
+        <text class='c-green'>{{item.cp}}</text>
+      </view>
+      <view>车型：
+        <text class='c-green'>{{item.cx}}</text>
+      </view>
+      <view>价格：
+        <text class='c-green'>{{item.price}}</text>
+      </view>
+      <slot name="scenicBtn{{index}}"></slot>
+    </view>
+  </navigator>
+</block>

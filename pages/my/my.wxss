@@ -45,8 +45,8 @@
 }
 
 .navlist image {
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 64rpx;
+  height: 64rpx;
   margin: 0 auto;
   padding: 60rpx 0 0;
 }
@@ -66,10 +66,10 @@
   height: 125rpx;
   position: absolute;
   top: 20%;
-  left: 38%;
+  left: 41%;
   z-index: 99;
   border-radius: 50%;
-  border: solid #89888c 2px;
+  border: solid #e4e4e4 1px;
 }
 
 .avater image {
@@ -80,7 +80,7 @@
 .userInfo {
   position: absolute;
   top: 73%;
-  left: 27%;
+  left: 31%;
   z-index: 99;
 }
 
@@ -114,10 +114,10 @@
 }
 
 .order image {
-  width: 45rpx;
-  height: 45rpx;
+  width: 64rpx;
+  height: 64rpx;
   display: inline-block;
-  margin: 20rpx 0 0 20rpx;
+  margin: 15rpx 0 0 20rpx;
 }
 
 /* 客服热线 */
@@ -127,19 +127,18 @@
   text-align: center;
   margin: 30rpx auto;
   border-radius: 20rpx;
-  box-shadow: 10rpx 10rpx 30rpx #999, -5rpx -5rpx 30rpx #999;
+  background-color: white;
 }
 
 .phone image {
   width: 64rpx;
-  height: 54rpx;
+  height: 64rpx;
   float: left;
-  padding: 10px 0 0 10px;
+  padding: 5px 0 0 10px;
 }
 
 .phone text {
   display: block;
   font-size: 22rpx;
-  color: #fff;
   line-height: 45rpx;
 }

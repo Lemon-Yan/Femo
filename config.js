@@ -2,7 +2,7 @@
  * 小程序配置文件
  */
 
-var host = "www.gxht.net.cn/yjdPlatform"
+var host = "www.cnfemo.com"
 
 var config = {
 
@@ -10,8 +10,7 @@ var config = {
   host,
 
   //首页--获取轮播图数据
-  //getLunboUrl: `https://${host}/findLunbo.do`
-  getLunboUrl: `modalData/index.json`
+  getLunboUrl: `https://${host}/FeMoDemo/ClassificationRimg/selectAll?startrow=1&endrow=10&classificationName=首页`
    
 };
 

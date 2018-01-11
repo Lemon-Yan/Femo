@@ -1,0 +1,9 @@
+/* pages/aboutUs/aboutUs.wxss */
+
+.about-txt {
+  text-indent: 2rem;
+  line-height: 50rpx;
+  font-size: 28rpx;
+  color: #999;
+  padding:20rpx 20rpx 0;
+}

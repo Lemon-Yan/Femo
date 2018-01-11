@@ -1,0 +1,25 @@
+<!--pages/feedBack/feedBack.wxml-->
+<view class='container'>
+  <view class='card'>
+    <view class='input-item remark'>
+      <text>感谢您对肥猫的支持</text>
+      <textarea maxlength="200" placeholder="请留下您宝贵的意见" bindinput="bindNumber" />
+      <view class='number-txt'>
+        <text class='change-num'>{{txtAccount}}</text>/200
+      </view>
+    </view>
+    <view class='btn'>
+      <button class='bg-c' bindtap='submit' type="primary" hover-class="other-button-hover">提交</button>
+    </view>
+  </view>
+
+  <!-- 成功提示语 -->
+  <view class='modal-section' wx:if="{{uhide}}">
+    <view class='modal-opaci'></view>
+    <view class='modal-cont'>
+      <icon type='success' size='70'></icon>
+      <text class='success-status'>提交成功</text>
+      <text class='success-msg'>感谢您提出宝贵的意见</text>
+    </view>
+  </view>
+</view>

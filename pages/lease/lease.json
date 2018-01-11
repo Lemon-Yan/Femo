@@ -1,3 +1,7 @@
 {
+  "usingComponents": { 
+    "card-list": "../../component/cardList/cardList", 
+    "carousel": "../../component/carousel/carousel"   
+  },
   "navigationBarTitleText": "租赁"
 }
