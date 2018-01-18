@@ -27,7 +27,8 @@
     "pages/aboutUs/aboutUs",
     "pages/feedBack/feedBack",
     "component/successModal/successModal",
-    "component/cardList/cardList"
+    "component/cardList/cardList",
+    "pages/questionDetail/questionDetail"
   ],
   "window": {
     "backgroundTextStyle": "light",

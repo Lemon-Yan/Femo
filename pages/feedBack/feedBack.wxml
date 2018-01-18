@@ -14,12 +14,16 @@
   </view>
 
   <!-- 成功提示语 -->
-  <view class='modal-section' wx:if="{{uhide}}">
+  <!-- <view class='modal-section' wx:if="{{uhide}}">
     <view class='modal-opaci'></view>
     <view class='modal-cont'>
       <icon type='success' size='70'></icon>
       <text class='success-status'>提交成功</text>
       <text class='success-msg'>感谢您提出宝贵的意见</text>
     </view>
-  </view>
+  </view> -->
+
+<!-- 调用modal组件 -->
+    <modal-success modal-hidden="{{is_modal_Hidden}}" modal-icon="{{is_modal_icon}}" modal-title="{{is_modal_title}}" modal-desc="{{is_modal_desc}}" />
+
 </view>

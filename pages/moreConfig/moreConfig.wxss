@@ -49,3 +49,6 @@
 .bor-r {
   border-right: solid #e4e4e4 1px;
 }
+#guanggao{
+  width:95%;
+}

@@ -5,10 +5,10 @@
       <image src='../../images/aaa.jpg'></image>
     </view>
     <view class='avater'>
-      <image src='../../images/user.png'></image>
+      <image src='{{avatarUrl}}'></image>
     </view>
     <view class='userInfo'>
-      <text>用户昵称：小鱼儿与花无缺</text>
+      <text>用户昵称：{{nickName}}</text>
     </view>
   </view>
 

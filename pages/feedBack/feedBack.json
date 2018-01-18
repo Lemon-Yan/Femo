@@ -1,3 +1,6 @@
 {
-  "navigationBarTitleText":"意见反馈"
+  "usingComponents": {
+    "modal-success": "../../component/successModal/successModal"
+  },
+  "navigationBarTitleText": "意见反馈"
 }

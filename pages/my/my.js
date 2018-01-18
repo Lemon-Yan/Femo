@@ -1,11 +1,12 @@
 // pages/my/my.js
+var app = getApp();
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+     
   },
 
   /**
@@ -14,13 +15,32 @@ Page({
   onLoad: function (options) {
     var that = this;
 
+    var UserInfo = wx.getStorageSync('UserInfo');
+    //console.log(UserInfo);
+    that.setData({
+      avatarUrl: UserInfo.avatarUrl,
+      nickName: UserInfo.nickName
+    })
+    //获取用户信息
+    // app.getUserInfo(function (res) {
+    //   console.log(res); 
+    //   that.setData({
+    //     avatarUrl: res.avatarUrl,
+    //     nickName: res.nickName
+    //   })
+    // });
+    //获取用户openid
+    // app.getUserOpenId(function(res){
+    //   console.log("my::::::"+res); 
+    // })
+
     var data = {
       "datas": [
         {
           "id": 2,
           "imgurl": "../../images/userInfo.png",
-          "pageUrl":"../memberCenter/memberCenter",
-          "title":"个人信息"
+          "pageUrl": "../memberCenter/memberCenter",
+          "title": "个人信息"
         },
         {
           "id": 1,
@@ -39,7 +59,7 @@ Page({
           "imgurl": "../../images/about.png",
           "pageUrl": "../aboutUs/aboutUs",
           "title": "关于我们"
-        }, 
+        },
         {
           "id": 1,
           "imgurl": "../../images/help.png",
@@ -51,7 +71,7 @@ Page({
           "imgurl": "../../images/email.png",
           "pageUrl": "../feedBack/feedBack",
           "title": "意见反馈"
-        } 
+        }
       ]
     };
     //console.log(data.datas);
@@ -81,7 +101,8 @@ Page({
         }
       }
     })
-  },  
+
+  },
 
   /**
    * 生命周期函数--监听页面初次渲染完成

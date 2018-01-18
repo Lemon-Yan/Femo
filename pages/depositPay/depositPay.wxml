@@ -11,7 +11,7 @@
       <image src='../../images/haibao.png'></image>
     </view>
     <view class='payBtn'>
-      <button class='' type="primary" hover-class="other-button-hover">立即支付</button>
+      <button class='' bindtap='pay' type="primary" hover-class="other-button-hover">立即支付</button>
     </view> 
   </view>
 

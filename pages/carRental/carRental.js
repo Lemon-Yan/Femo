@@ -1,23 +1,48 @@
 // pages/carRental/carRental.js
+var Comm = require("../../utils/common.js");
+var Config = require('../../config.js');
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-  
+    imgPath: Config.imgPath  //图片前缀
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
-  },
-  //跳转到预约
-  reserveBtn: function () {
+    var that=this;
+    console.log(options.productDetailId);
+    //商品详情id
+    that.setData({
+      productDetailId: options.productDetailId
+    }) 
+     
+    //车辆配置信息
+    var leaseCarprice = Config.leaseCarprice + "?productDetailid=" + options.productDetailId;
+    Comm.Request(leaseCarprice, "get", "", function (res) {
+      //console.log(JSON.parse(res.data)[0].leasepriceId); 
+      wx.setStorageSync('carConfigInfo', JSON.parse(res.data)[0]);
+      that.setData({
+        carConfigData: JSON.parse(res.data)[0]
+      })
+    })
+  }, 
+  //打开预约页面
+  openReserve: function (event) {
+    //console.log(event); 
     wx.navigateTo({
-      url: '../reserve/reserve'
+      url: '../reserve/reserve?carDetailId=' + event.target.dataset.carid
+    })
+  },
+  //跳转到更多配置页面
+  moreConfig: function () {
+    //console.log(333);
+    wx.navigateTo({
+      url: '../moreConfig/moreConfig'
     })
   },
 

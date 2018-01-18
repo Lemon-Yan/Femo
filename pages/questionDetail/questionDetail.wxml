@@ -1,0 +1,12 @@
+<!--pages/questionDetail/questionDetail.wxml-->
+<view class='container'> 
+  <!-- 数据 -->
+  <view class='card list-section'>
+    <view class='list-item'>
+      <text class='list-title'>{{question}}</text>
+    </view> 
+    <view class='list-item'>
+      <text class='list-title'>{{answer}}</text>
+    </view>
+  </view>
+</view>

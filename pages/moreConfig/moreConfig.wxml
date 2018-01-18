@@ -1,50 +1,44 @@
 <!--pages/moreConfig/moreConfig.wxml-->
-<view class='container'> 
+<view class='container'>
   <!-- 广告 -->
-  <view class='card b-shadow'>
-    <navigator url='../carInfo/carInfo' class='card-content'>
-      <image src='../../images/haibao.png'></image>
-    </navigator>
+  <view class='card b-shadow' id="guanggao">
+    <view class='card-content'>
+      <image mode="widthFix" wx:if="{{carConfigData.leaseCarpriceList[0].imgurlList[0].imgurl==null}}" src='../../images/noImg.png'></image>
+      <image mode="widthFix" wx:if="{{carConfigData.leaseCarpriceList[0].imgurlList[0].imgurl!=null}}" src='{{imgPath}}{{carConfigData.leaseCarpriceList[0].imgurlList[0].imgurl}}'></image>
+    </view>
   </view>
 
-  <view class='card b-shadow configDetail'> 
-    <view class='table-title'>2017版奇瑞EQ1</view>  
+  <view class='card b-shadow configDetail'>
+    <view class='table-title'>{{carConfigData.leaseCarpriceList[0].productName||'暂无数据'}}</view>
     <view class='table-w table-fl bor-r'>
+      <text class='table-txt'>租金/月</text>
+      <text class='table-txt'>押金</text>
+      <text class='table-txt'>签约类型</text>
+      <text class='table-txt'>支付方式</text>
+      <text class='table-txt'>福利</text>
+      <text class='table-txt'>续航里程</text>
+      <text class='table-txt'> 车身结构</text>
       <text class='table-txt'>整车质保</text>
-      <text class='table-txt'>变速箱</text>
-      <text class='table-txt'>最高车速（km/h）</text>
-       <text class='table-txt'>整车质保</text>
-      <text class='table-txt'>变速箱</text>
-      <text class='table-txt'>最高车速（km/h）</text>
-      <text class='table-txt'>整车质保</text>
-      <text class='table-txt'>变速箱</text>
-      <text class='table-txt'>最高车速（km/h）</text>
-      <text class='table-txt'>整车质保</text>
-      <text class='table-txt'>变速箱</text>
-      <text class='table-txt'>最高车速（km/h）</text>
-       <text class='table-txt'>整车质保</text>
-      <text class='table-txt'>变速箱</text>
-      <text class='table-txt'>最高车速（km/h）</text>
-    </view> 
-
-    <view class='table-w table-fr'>
-      <text class='table-txt'>三年或12万公里</text>
-      <text class='table-txt'>电动车单速变速箱</text>
-      <text class='table-txt'>100</text>
-      <text class='table-txt'>三年或12万公里</text>
-      <text class='table-txt'>电动车单速变速箱</text>
-      <text class='table-txt'>100</text>
-      <text class='table-txt'>三年或12万公里</text>
-      <text class='table-txt'>电动车单速变速箱</text>
-      <text class='table-txt'>100</text>
-      <text class='table-txt'>三年或12万公里</text>
-      <text class='table-txt'>电动车单速变速箱</text>
-      <text class='table-txt'>100</text>
-        <text class='table-txt'>三年或12万公里</text>
-      <text class='table-txt'>电动车单速变速箱</text>
-      <text class='table-txt'>100</text>
+      <text class='table-txt'>功率</text>
+      <text class='table-txt'>车身尺寸</text>
+      <text class='table-txt'>驱动方式</text>
+      <text class='table-txt'>充电方式</text>
     </view>
 
+    <view class='table-w table-fr'>
+      <text class='table-txt'>{{carConfigData.leasePackage||'暂无数据'}}</text>
+      <text class='table-txt'>{{carConfigData.amount||'暂无数据'}}</text>
+      <text class='table-txt'>{{carConfigData.contract||'暂无数据'}}</text>
+      <text class='table-txt'>{{carConfigData.payment||'暂无数据'}}</text>
+      <text class='table-txt'>{{carConfigData.welfare||'暂无数据'}}</text>
+      <text class='table-txt'>{{carConfigData.leaseCarpriceList[0].endurancemileage||'暂无数据'}}公里</text>
+      <text class='table-txt'>{{carConfigData.leaseCarpriceList[0].structure||'暂无数据'}}</text>
+      <text class='table-txt'>{{carConfigData.guaranteePeriod||'暂无数据'}}</text>
+      <text class='table-txt'>{{carConfigData.leaseCarpriceList[0].maxpower||'暂无数据'}}KW</text>
+      <text class='table-txt'>{{carConfigData.leaseCarpriceList[0].productSize||'暂无数据'}}</text>
+      <text class='table-txt'>{{carConfigData.leaseCarpriceList[0].drivetype||'暂无数据'}}</text>
+      <text class='table-txt'>{{carConfigData.leaseCarpriceList[0].chargingtime||'暂无数据'}}</text>
+    </view>
   </view>
 
 </view>

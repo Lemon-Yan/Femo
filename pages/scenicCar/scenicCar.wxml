@@ -1,48 +1,56 @@
 <!--pages/scenicCar/scenicCar.wxml-->
 <view class='container'>
   <!-- 景点信息 -->
-  <view class='card b-shadow'>
+  <!-- <view class='card b-shadow'>
     <view class='card-content'>
       <image src='../../images/cc.png'></image>
     </view>
     <view class='carDesc'>
       <text>舟山市是我国第一个以群岛建制的地级市，隶属于浙江省，地处中国东部黄金海岸线与长江黄金水道的交汇处，背靠长三角广阔经济腹地。</text>
     </view>
+  </view> -->
+  <view class='card b-shadow'>
+    <view class='card-content'>
+      <image src='{{imgPath}}{{scenicJieshao.classificationRimgurl}}'></image>
+    </view>
+    <view class='carDesc'>
+      <text>{{scenicJieshao.classificationRimgname}}</text>
+    </view>
   </view>
 
   <!-- 景点车辆信息 -->
-  <!-- <block wx:for-items="{{carInfoData}}">
+   <block wx:for-items="{{carInfoData2}}">
     <view class='card nearCard b-shadow'>
       <view class='nearCard-fl'>
-        <image src='{{item.imgurl}}'></image>
+        <image wx:if="{{item.leaseCarpriceList[0].imgurl==null}}" src='../../images/car.png'></image>
+        <image wx:if="{{item.leaseCarpriceList[0].imgurl!=null}}" src='{{imgPath}}{{item.leaseCarpriceList[0].imgurl}}'></image>
       </view>
       <view class='nearCard-fr'>
         <view>车牌：
-          <text class='c-green'>{{item.cp}}</text>
+          <text class='c-green'>{{item.leaseCarpriceList[0].carno||'暂无数据'}}</text>
         </view>
         <view>车型：
-          <text class='c-green'>{{item.cx}}</text>
+          <text class='c-green'>{{item.leaseCarpriceList[0].structure||'暂无数据'}}</text>
         </view>
         <view>价格：
-          <text class='c-green'>{{item.price}}</text>
+          <text class='c-green'>{{item.leasehousePrice||'暂无数据'}}</text>
         </view>
         <view class='btnContent'>
-          <button id="navBtn" class='bg-c' type="primary" hover-class="other-button-hover">导航到目的地</button>
-          <button id="reserveBtn" bindtap="openReserve" class='bg-c' type="primary" hover-class="other-button-hover">预定</button>
-        </view>
+          <button id="navBtn" data-name="{{item.address}}" data-address="{{item.area}}{{item.address}}" data-latitude="{{item.latitude}}" data-longitude="{{item.longitude}}" bindtap='navBtn' class='bg-c' type="primary" hover-class="other-button-hover">导航到目的地</button>
+          <button id="reserveBtn" data-carid="{{item.leaseCarpriceList[0].productDetailid}}" bindtap="openReserve" class='bg-c' type="primary" hover-class="other-button-hover">预定</button>
+        </view> 
       </view>
     </view>
-  </block> -->
+  </block> 
 
   <!-- 卡片列表组件  说明：modal-card是数据表；modal-page是模板样式：1首页模板，2租赁页的模板；modal-pageurl跳转的页面 -->
-  <view class='clearfix modalInit'>
-    <card-list modal-card="{{carInfoData}}" modal-page="{{3}}">
-      <!-- 使用多个slot，把按钮插入指定位置 -->
+   <!-- <view class='clearfix modalInit'>
+    <card-list modal-card="{{carInfoData2}}" modal-page="{{3}}"> 
       <view class='btnContent' wx:for="{{carInfoData}}" slot="scenicBtn{{index}}">
-        <button id="navBtn" class='bg-c' type="primary" hover-class="other-button-hover">导航到目的地</button>
-        <button id="reserveBtn" bindtap="openReserve" class='bg-c' type="primary" hover-class="other-button-hover">预定</button>
+        <button id="navBtn" data-name="{{item.address}}" data-address="{{item.area}}{{item.address}}" data-latitude="{{item.latitude}}" data-longitude="{{item.longitude}}" bindtap='navBtn' class='bg-c' type="primary" hover-class="other-button-hover">导航到目的地</button>
+        <button id="reserveBtn" data-carid="{{item.leaseCarpriceList[0].productDetailid}}" bindtap="openReserve" class='bg-c' type="primary" hover-class="other-button-hover">预定</button>
       </view>
     </card-list>
-  </view>
+  </view>  -->
 
 </view>

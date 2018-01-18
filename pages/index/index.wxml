@@ -1,9 +1,9 @@
-<!--index.wxml--> 
+<!--index.wxml-->
 <view class="container">
   <!-- 头部 -->
   <view class='header'>
     <navigator url="../mapLookCar/mapLookCar" class='h-fl h-content'>
-      <image src='../../images/position.png'></image>
+      <image mode="widthFix" src='../../images/position.png'></image>
       <text>地图找车</text>
     </navigator>
     <view class='h-middle h-content'>
@@ -12,28 +12,41 @@
     <view class='h-fr h-content'>
       <navigator url="../myJourney/myJourney">
         <text>我的行程</text>
-        <image src='../../images/menu.png'></image>
+        <image mode="widthFix" src='../../images/menu.png'></image>
       </navigator>
     </view>
   </view>
 
-  <!--轮播图-->
-  <view class='clearfix modalInit'>
-    <!-- 调用轮播图组件 -->
+  <!-- 调用轮播图组件 -->
+  <!-- <view class='clearfix modalInit'> 
     <carousel modal-carousel="{{lunboData}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" />
-  </view>
+  </view> -->
+
+  <!--轮播图模板-->
+  <swiper class="home-swiper" indicator-dots="true" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{lunboData2}}">
+      <swiper-item>
+        <image mode="widthFix" wx:if="{{item.classificationRimgurl==null}}" src='../../images/noImg.png'></image>
+        <image mode="widthFix" wx:if="{{item.classificationRimgurl!=null}}" src='{{imgPath}}{{item.classificationRimgurl}}'></image>
+      </swiper-item>
+    </block>
+  </swiper>
+
 
   <!-- 景区租车卡片 -->
-  <view class='card b-shadow'>
-    <view class='card-title'>景区租车</view>
-    <navigator url='../scenicCar/scenicCar' class='card-content'>
-      <image src='../../images/cc.png'></image>
-    </navigator>
+  <view class='card b-shadow' id="journeyCar">
+    <view class='card-content' bindtap='toggleBtn' id='toggleBtn'>
+      <image mode="widthFix" src='../../images/home5.png'></image>
+    </view>
+    <view class='journey-item' wx:if="{{uhide}}">
+      <navigator url="../scenicCar/scenicCar?scenicName=舟山">舟山</navigator>
+      <navigator url="../scenicCar/scenicCar?scenicName=舟山">景区租车</navigator>
+      <navigator url="../scenicCar/scenicCar?scenicName=舟山">景区租车</navigator>
+    </view>
   </view>
   <view class='card b-shadow'>
-    <view class='card-title'>长租试驾</view>
-    <navigator url='../scenicCar/scenicCar' class='card-content'>
-      <image src='../../images/cc.png'></image>
+    <navigator url='../carRental/carRental?productDetailId={{item.leaseCarpriceList[0].productDetailid}}' class='card-content'>
+      <image mode="widthFix" src='../../images/home3.png'></image>
     </navigator>
   </view>
 
@@ -43,9 +56,33 @@
   </view>
 
   <!-- 调用modal组件 -->
-  <!-- <modal-success modal-hidden="{{is_modal_Hidden}}" modal-icon="{{is_modal_icon}}" modal-title="{{is_modal_title}}" modal-desc="{{is_modal_desc}}" /> -->
+  <!-- <modal-success modal-hidden="{{is_modal_Hidden}}" modal-icon="{{is_modal_icon}}" modal-title="{{is_modal_title}}" modal-desc="{{is_modal_desc}}" />  -->
   <!-- 卡片列表组件  说明：modal-card是数据表；modal-page是模板样式：1首页模板，2租赁页的模板，3景区租车模板；modal-pageurl跳转的页面 -->
-  <view class='clearfix modalInit'>
+  <!-- <view class='clearfix modalInit'>
     <card-list modal-card="{{carInfoData}}" modal-page="{{1}}" modal-pageurl="{{'../carRental/carRental'}}" />
-  </view>
+  </view> -->
+
+  <block wx:for="{{carInfoData2}}">
+    <navigator class='card nearCard b-shadow' url='../carRental/carRental?productDetailId={{item.leaseCarpriceList[0].productDetailid}}'>
+      <view class='nearCard-fl'>
+        <image mode="widthFix" wx:if="{{item.leaseCarpriceList[0].imgurl==null}}" src='../../images/noImg.png'></image>
+        <image mode="widthFix" wx:if="{{item.leaseCarpriceList[0].imgurl!=null}}" src='{{imgPath}}{{item.leaseCarpriceList[0].imgurl}}'></image>
+      </view>
+      <view class='nearCard-fr'>
+        <view>价格：
+          <text class='c-green'>{{item.leasehousePrice}}</text>
+        </view>
+        <view>电量：
+          <text class='c-green'>暂无数据</text>
+        </view>
+        <view>距离：
+          <text class='c-green'>暂无数据</text>
+        </view>
+        <view>位置：
+          <text class='c-green'>{{item.area}}{{item.address}}</text>
+        </view>
+      </view>
+    </navigator>
+  </block>
+
 </view>

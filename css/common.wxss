@@ -105,8 +105,9 @@ text {
 .card-content image {
   width: 100%;
   height: 300rpx;
-  border-bottom-left-radius: 20rpx;
-  border-bottom-right-radius: 20rpx;
+  border-radius: 20rpx;
+  /* border-bottom-left-radius: 20rpx;
+  border-bottom-right-radius: 20rpx; */
 }
 
 /* 附近的车卡片*/

@@ -1,6 +1,6 @@
 /* pages/memberCenter/memberCenter.wxss */
 
-.card-content image {
+.card-content2 image {
   width: 100%;
   height: 325rpx;
   border-top-left-radius: 20rpx;
@@ -27,6 +27,7 @@
 .avater image {
   width: 100%;
   height: 100%;
+  border-radius: 50%;
 }
 
 .userInfo {

@@ -1,6 +1,5 @@
 /* pages/carInfo/carInfo.wxss */
-
-.card {
+ .card {
   width: 95%;
   background-color: #fff;
   margin: 20rpx auto 0;
@@ -22,20 +21,9 @@
 
 .share image {
   width: 35rpx;
-  height: 35rpx;
+  height: 30rpx;
   display: inline-block;
-  margin: 15rpx 0 0 0;
-}
-
-.share {
-  display: inline-block;
-  float: right;
-  font-size: 22rpx;
-}
-
-.share text {
-  font-size: 22rpx;
-  margin: 0 15rpx;
+  margin: 10rpx 0 0 0;
 }
 
 .carDesc2 text {
@@ -48,6 +36,23 @@
   height: 50rpx;
   float: right;
   line-height: 50rpx;
+}
+
+#shareBtn {
+  padding: 0;
+  margin: 0;
+  width: 42%;
+  display: inline-block;
+  height: 50rpx;
+  float: right;
+  line-height: 50rpx;
+  background-color: #fff;
+  color: #999;
+  text-align: right;
+}
+
+#shareBtn::after {
+  border: none !important;
 }
 
 button[type="primary"] {
@@ -92,13 +97,14 @@ button[type="primary"] {
 }
 
 /* 车辆配置详情 */
+
 .toggleBtn {
   display: inline-block;
   height: 50rpx;
   background-color: #fff;
   border-top-left-radius: 15rpx;
   border-top-right-radius: 15rpx;
-  padding: 10rpx 15rpx;
+  padding: 10rpx 30rpx;
   margin: 0 20rpx 2rpx 0;
   font-size: 28rpx;
   line-height: 50rpx;
@@ -129,10 +135,7 @@ button[type="primary"] {
 }
 
 /* 车身颜色 */
-.priceColor{
-  font-size:24rpx;
-  color:red;
-}
+
 .car-c {
   border-radius: 50%;
   border: solid #999 1px;
@@ -194,15 +197,44 @@ button[type="primary"] {
   line-height: 50rpx;
 }
 
-
-.lightDot-txt button{
-    width: 28%;
+.lightDot-txt button {
+  width: 28%;
   display: inline-block;
   height: 50rpx;
   float: right;
   line-height: 50rpx;
 }
-button[type="default"] { 
-  font-size: 24rpx; 
-  color:#999999;
+
+button[type="default"] {
+  font-size: 24rpx;
+  color: #999;
+}
+
+/* 价位 */
+
+.priceDetail {
+  margin-left: 12%;
+  margin-top: -5%;
+}
+
+.table-t {
+}
+
+.table-t text {
+  font-size: 22rpx;
+  color: #999;
+  width: 19%;
+  display: inline-block;
+  border-left: solid #e4e4e4 1px;
+  border-top: solid #e4e4e4 1px;
+  text-align: center;
+  padding: 10rpx 0;
+}
+
+.table-t text:last-child {
+  border-right: solid #e4e4e4 1px;
+}
+
+.table-content text {
+  border-bottom: solid #e4e4e4 1px;
 }

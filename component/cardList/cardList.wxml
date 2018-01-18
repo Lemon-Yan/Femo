@@ -37,13 +37,13 @@
     <!-- 景点租车模板 -->
     <view class='nearCard-fr' wx:if="{{modalPage==3}}">
       <view>车牌：
-        <text class='c-green'>{{item.cp}}</text>
+        <text class='c-green'>{{item.leaseCarpriceList[0].carno||'暂无数据'}}</text>
       </view>
       <view>车型：
-        <text class='c-green'>{{item.cx}}</text>
+        <text class='c-green'>{{item.leaseCarpriceList[0].structure||'暂无数据'}}</text>
       </view>
       <view>价格：
-        <text class='c-green'>{{item.price}}</text>
+        <text class='c-green'>{{item.leasehousePrice||'暂无数据'}}</text>
       </view>
       <slot name="scenicBtn{{index}}"></slot>
     </view>

@@ -1,2 +1,61 @@
 /* pages/sale/sale.wxss */
+/* 附近的车卡片*/
+
+.near {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  color: #999;
+  font-size: 30rpx;
+  margin: 20rpx 0 0 0;
+}
+
+.near text::before {
+  position: absolute;
+  z-index: 2;
+  top: 25rpx;
+  left: 30rpx;
+  content: "";
+  border-top: solid #c1c1c1 1px;
+  width: 35%;
+}
+
+.near text::after {
+  position: absolute;
+  z-index: 2;
+  top: 25rpx;
+  right: 30rpx;
+  content: "";
+  border-top: solid #c1c1c1 1px;
+  width: 35%;
+}
+
+.nearCard-fl {
+  width: 40%;
+  float: left;
+}
+
+.nearCard-fl image {
+  width: 200rpx;
+  height: 200rpx;
+  padding: 8% 15%;
+}
+
+.nearCard-fr {
+  font-size: 27rpx;
+  line-height: 50rpx;
+  width: 60%;
+  margin-left: 40%;
+  margin-top: 15rpx;
+  color: #999;
+}
+
+.nearCard-fr text {
+  font-size: 22rpx;
+}
+
+.nearCard {
+  height: 240rpx;
+}
+ 
  

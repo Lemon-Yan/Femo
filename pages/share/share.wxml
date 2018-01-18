@@ -13,18 +13,11 @@
       5张1元用车卷
     </view>
 
-    <view class="navlist">
-      <block wx:for-items="{{jiuData}}">
-        <navigator url="{{item.pageUrl}}">
-          <image src="{{item.imgurl}}" alt=""></image>
-          <text>{{item.title}}</text>
-        </navigator>
-      </block>
-    </view>
-
-    <view class='ruleDetail'>
-      查看詳細规则
-      <image src='../../images/right-gray.png'></image>
+    <view class="navlist"> 
+      <button class='share' id="shareBtn" open-type="share" type="primary" hover-class="other-button-hover">
+        <image src="../../images/wxsession.png" alt=""></image>
+        <text>微信好友</text>
+      </button> 
     </view>
 
   </view>

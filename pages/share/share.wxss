@@ -63,3 +63,32 @@
   height: 40rpx;
   display: inline-block;
 }
+
+/* 分享 */
+
+#shareBtn {
+  background-color: #fff;
+}
+
+#shareBtn::after {
+  border: none !important;
+}
+
+button[type="primary"] {
+  color: #fff;
+  background-color: #20b3ad;
+  font-size: 26rpx;
+  margin-top: 10rpx;
+}
+
+#shareBtn image {
+  width: 100rpx;
+  height: 100rpx;
+  display: inline-block;
+  margin: -25rpx 0 0 0;
+}
+
+#shareBtn text {
+  color: #000;
+  display: block;
+}

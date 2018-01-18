@@ -2,27 +2,26 @@
 <view class='container'>
   <view class='card b-shadow'>
     <view class='card-content'>
-      <image src='../../images/haibao.png'></image>
+      <image mode="widthFix" wx:if="{{carConfigData.leaseCarpriceList[0].imgurlList[0].imgurl==null}}" src='../../images/noImg.png'></image>
+      <image mode="widthFix" wx:if="{{carConfigData.leaseCarpriceList[0].imgurlList[0].imgurl!=null}}" src='{{imgPath}}{{carConfigData.leaseCarpriceList[0].imgurlList[0].imgurl}}'></image>
     </view>
     <view class='carDesc carDesc1'>
-      <text>奇瑞EQ1两座 四座</text>
-      <view class='share'>
-        <image src='../../images/position.png'></image>
-        <text>收藏</text>
-        <image src='../../images/position.png'></image>
-        <text>分享</text>
-      </view>
+      <text>{{carConfigData.leaseCarpriceList[0].productName||'暂无数据'}}</text>
+      <button class='share' id="shareBtn" open-type="share" type="primary" hover-class="other-button-hover">
+        <image src='../../images/share.png'></image>
+        分享
+      </button>
     </view>
     <view class='carDesc carDesc2'>
-      <text>2017款奇瑞EQ1 纯电动 后置后驱 电动车单速变速箱</text>
-      <button bindtap="reserveBtn" class='bg-c' type="primary" hover-class="other-button-hover">预约</button>
+      <text>{{carConfigData.leaseCarpriceList[0].productDetail||'暂无数据'}}</text>
+      <button bindtap="openReserve" data-carid="{{carConfigData.leaseCarpriceList[0].productDetailid}}" class='bg-c' type="primary" hover-class="other-button-hover">预约</button>
     </view>
   </view>
 
 
   <view class='carDetail b-shadow'>
     <view class='toggleBtn'>两座</view>
-    <view class='toggleBtn'>四座</view> 
+    <view class='toggleBtn'>四座</view>
     <view class='carDetailContent'>
 
       <view class='carDetail-list'>价位：
@@ -36,28 +35,28 @@
             <text>福利</text>
           </view>
           <view class='table-t table-content'>
-            <text>1200/月</text>
-            <text>3万</text>
-            <text>两年</text>
-            <text>半年</text>
-            <text>含保险</text>
+            <text>{{carConfigData.leasePackage||'暂无数据'}}</text>
+            <text>{{carConfigData.amount||'暂无数据'}}</text>
+            <text>{{carConfigData.contract||'暂无数据'}}</text>
+            <text>{{carConfigData.payment||'暂无数据'}}</text>
+            <text>{{carConfigData.welfare||'暂无数据'}}</text>
           </view>
-        </view>
-
+        </view> 
       </view>
 
       <view class='carDetail-list clearfix carDetailImgContain'>
         图片：
-        <scroll-view class="scroll-view_H" scroll-x="true" bindscroll="scroll">
-          <navigator url='../appearance/appearance'>
+        <view class="scroll-view_H">
+          <scroll-view scroll-x="true" bindscroll="scroll">
+            <image class="scroll-view-item_H" wx:for="{{carConfigData.leaseCarpriceList[0].imgurlList}}" src='{{imgPath}}{{item.imgurl}}'></image>
+            <!-- <image class="scroll-view-item_H" src='../../images/haibao.png'></image>
             <image class="scroll-view-item_H" src='../../images/haibao.png'></image>
             <image class="scroll-view-item_H" src='../../images/haibao.png'></image>
             <image class="scroll-view-item_H" src='../../images/haibao.png'></image>
-            <image class="scroll-view-item_H" src='../../images/haibao.png'></image>
-            <image class="scroll-view-item_H" src='../../images/haibao.png'></image>
-            <image class="scroll-view-item_H" src='../../images/haibao.png'></image>
-          </navigator>
-        </scroll-view>
+            <image class="scroll-view-item_H" src='../../images/haibao.png'></image> -->
+          </scroll-view>
+        </view>
+
       </view>
 
       <view class='carDetail-list clearfix'>
@@ -78,41 +77,37 @@
           <view class='lightDot-fl'>
             <view class='lightDot-txt'>
               续航里程：
-              <text>180公里</text>
+              <text>{{carConfigData.leaseCarpriceList[0].endurancemileage||'暂无数据'}}公里</text>
             </view>
             <view class='lightDot-txt'>
               车身结构：
-              <text>3门4座两厢</text>
+              <text>{{carConfigData.leaseCarpriceList[0].structure||'暂无数据'}}</text>
             </view>
             <view class='lightDot-txt'>
               整车质保：
-              <text>3年或12万公里</text>
-            </view>
-            <view class='lightDot-txt'>
-              驱动方式：
-              <text>后置后驱</text>
+              <text>{{carConfigData.guaranteePeriod||'暂无数据'}}</text>
             </view>
           </view>
 
           <view class='lightDot-fr'>
             <view class='lightDot-txt'>
               功率：
-              <text>30KW</text>
+              <text>{{carConfigData.leaseCarpriceList[0].maxpower||'暂无数据'}}KW</text>
             </view>
             <view class='lightDot-txt'>
               车身尺寸：
-              <text>3200*1670*1550</text>
+              <text>{{carConfigData.leaseCarpriceList[0].productSize||'暂无数据'}}</text>
             </view>
             <view class='lightDot-txt'>
-              变速箱：
-              <text>单速变速箱</text>
+              驱动方式：
+              <text>{{carConfigData.leaseCarpriceList[0].drivetype||'暂无数据'}}</text>
             </view>
           </view>
 
           <view class='lightDot-middle clearfix'>
             <view class='lightDot-txt'>
               充电方式：
-              <text>快充0.5~1.5小时，慢充6小时</text>
+              <text>{{carConfigData.leaseCarpriceList[0].chargingtime||'暂无数据'}}</text>
               <button type="default" bindtap='moreConfig' hover-class="other-button-hover">更多配置</button>
             </view>
           </view>

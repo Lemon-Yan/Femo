@@ -1,4 +1,6 @@
 // pages/helpCenter/helpCenter.js
+var Comm = require("../../utils/common.js");
+var Config = require('../../config.js');
 Page({
 
   /**
@@ -12,7 +14,16 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    //questionUrl
+    var that=this;
+    //获取所有的问题 
+    Comm.Request(Config.questionUrl, "get", "", function (res) {
+      console.log(JSON.parse(res.data)); 
+      that.setData({
+        questionData: JSON.parse(res.data).list
+      })
+    })
+
   },
 
   /**

@@ -3,10 +3,16 @@
 
   <!-- 数据列表 -->
   <view class='card list-section'>
-    <view class='list-item'>
+    <view class='list-item' id="title">
       <text class='list-title'>常见问题</text>
     </view>
-    <view class='list-item'>
+    <!-- questionData -->
+    <navigator wx:for="{{questionData}}" url="../questionDetail/questionDetail?question={{item.question}}&answer={{item.answer}}" class='list-item'>
+      <text class='list-title'>{{item.question}}</text>
+      <image src='../../images/right-gray.png'></image>
+    </navigator>
+
+    <!-- <view class='list-item'>
       <text class='list-title'>1.用车使用资格</text>
       <image src='../../images/right-gray.png'></image>
     </view>
@@ -51,7 +57,7 @@
     <view class='list-item'>
       <text class='list-title'>11.有违章的话，谁去处理</text>
       <image src='../../images/right-gray.png'></image>
-    </view>
+    </view> -->
 
   </view>
 </view>

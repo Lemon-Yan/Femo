@@ -1,30 +1,48 @@
 // pages/carInfo/carInfo.js
+var Comm = require("../../utils/common.js");
+var Config = require('../../config.js');
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    imgPath: Config.imgPath  //图片前缀
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    var that = this;
+    //console.log(options.productDetailId);
+    //商品详情id
+    // that.setData({
+    //   productDetailId: options.productDetailId
+    // })
 
+    //车辆配置信息
+    var saleCarprice = Config.saleCarprice + "?productDetailid=" + options.productDetailId;
+    Comm.Request(saleCarprice, "get", "", function (res) {
+      console.log(res.data[0].batterycapacity);
+      wx.setStorageSync('carConfigInfo', res.data);
+      that.setData({
+        carConfigData: res.data[0]
+      })
+    })
+  },
+  //打开预约页面
+  openReserve: function (event) {
+    //console.log(event); 
+    wx.navigateTo({
+      url: '../reserve/reserve?carDetailId=' + event.target.dataset.carid
+    })
   },
   //跳转到更多配置页面
   moreConfig: function () {
     //console.log(333);
     wx.navigateTo({
       url: '../moreConfig/moreConfig'
-    })
-  },
-  //跳转到预约
-  reserveBtn:function(){
-    wx.navigateTo({
-      url: '../reserve/reserve'
     })
   },
 
