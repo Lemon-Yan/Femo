@@ -22,7 +22,7 @@ var config = {
   addInformation: `https://${host}/Information/addInformation`,     //用户反馈 
 
   questionUrl: `https://${host}/Question/selectAll?startrow=1&endrow=50`,     //帮助中心
-  questionUrl: `https://${host}/Question/selectAll?startrow=1&endrow=50`,     //优惠券
+  userCoupon: `https://${host}/UserCoupon/selectAllById`,     //获取用户优惠券
    
 };
 

@@ -1,6 +1,7 @@
 // pages/depositPay/depositPay.js
 var Comm = require("../../utils/common.js");
 var Config = require('../../config.js');
+var app = getApp();
 Page({
 
   /**
@@ -13,7 +14,7 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
+  onLoad: function (options) {  
     //生成时间戳
     var timestamp = (new Date()).valueOf();
     console.log(timestamp);
@@ -23,50 +24,45 @@ Page({
     console.log(cc);
 
     //微信用户openid   Feimo:wxd193898f79130912
-    var carConfigData = wx.getStorageSync('UserInfoOpenId');
-    console.log(JSON.stringify(carConfigData));
+    var UserInfoOpenId = wx.getStorageSync('UserInfoOpenId');
+    //console.log("UserInfoOpenId:" + JSON.stringify(UserInfoOpenId));
+    if (!UserInfoOpenId) {
+      //获取用户openid
+      app.getUserOpenId(function (res) {
+        console.log("my::::::" + res);
+      })
+    }
+
   },
 
   pay: function () {
+    wx.vibrateShort();
 
-    wx.chooseAddress({
+    var payUrl = "";
+    wx.request({
+      url: payUrl,
+      method: "get",
+      header: {
+        'content-type': 'application/json' // 默认值
+      },
       success: function (res) {
-        console.log(res.userName)
-        console.log(res.postalCode)
-        console.log(res.provinceName)
-        console.log(res.cityName)
-        console.log(res.countyName)
-        console.log(res.detailInfo)
-        console.log(res.nationalCode)
-        console.log(res.telNumber)
+        //调用支付
+        wx.requestPayment({
+          'timeStamp': '',  //时间戳
+          'nonceStr': '',   //随机字符串
+          'package': '',    //统一下单接口返回的 prepay_id
+          'signType': 'MD5', //签名类型，默认为MD5
+          'paySign': '',     //签名
+          'success': function (res) {
+
+          },
+          'fail': function (res) {
+
+          }
+
+        })
       }
     })
-    
-    // var payUrl = "";
-    // wx.request({
-    //   url: payUrl,
-    //   method: "get",
-    //   header: {
-    //     'content-type': 'application/json' // 默认值
-    //   },
-    //   success: function (res) {
-    //     //调用支付
-    //     wx.requestPayment({
-    //       'timeStamp': '',  //时间戳
-    //       'nonceStr': '',   //随机字符串
-    //       'package': '',    //统一下单接口返回的 prepay_id
-    //       'signType': 'MD5', //签名类型，默认为MD5
-    //       'paySign': '',     //签名
-    //       'success': function (res) {
-
-    //       },
-    //       'fail': function (res) {
-
-    //       }
-          
-    //     })
-    //   }
-    // })
 
 
   },

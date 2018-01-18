@@ -1,4 +1,6 @@
 // pages/my/my.js
+var Comm = require("../../utils/common.js");
+var Config = require('../../config.js');
 var app = getApp();
 Page({
 

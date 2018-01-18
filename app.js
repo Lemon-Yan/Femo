@@ -49,7 +49,7 @@ App({
             url: addUserUrl,
             method: "get",
             success: function (res) {
-              //console.log('添加用户信息', res);
+              console.log('添加用户信息', res);
               var openIdUrl = Config.getUserId + "?openid=" + data.code;  //获取用户openid
               //console.log(openIdUrl);
               //获取openid
@@ -57,7 +57,7 @@ App({
                 url: openIdUrl,
                 method: "get",
                 success: function (ops) {
-                  //console.log('拉取openid成功', ops.data);
+                  console.log('拉取openid成功', ops.data);
                   wx.setStorageSync('UserInfoOpenId', ops.data);
                   self.globalData.openid = ops.data
                   cb(self.globalData.openid)

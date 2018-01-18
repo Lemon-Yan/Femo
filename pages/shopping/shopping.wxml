@@ -1,52 +1,45 @@
 <!--pages/shopping/shopping.wxml-->
 <view class="container">
-  <navigator url='../share/share' class='card b-shadow'>
-    <view class='card-img'>
-      <image src='../../images/timg.jpg'></image>
-    </view>
-    <view class='card-txt'>
+  <view class='card b-shadow'>
+    <view class='card-fl'>
       <view class='item-title'>
-        会员积分
+        <image src='../../images/hongbao.png'></image>
+        <text>会员积分</text>
       </view>
-      <view class='item-content'>
-        50
-        <text class=''>分</text>
-        <image src='../../images/right.png'></image>
-      </view>
+      <view class='card-date'>有效期：2018.01.15-2018.02.10</view>
     </view>
-  </navigator>
-
-  <navigator url='../share/share' class='card b-shadow'>
-    <view class='card-img'>
-      <image src='../../images/timg.jpg'></image>
+    <view class='card-fr'>
+      ￥
+      <text class=''>1</text>
     </view>
-    <view class='card-txt'>
+  </view>
+  <view class='card b-shadow'>
+    <view class='card-fl'>
       <view class='item-title'>
-        优惠券
+        <image src='../../images/hongbao.png'></image>
+        <text>会员积分</text>
       </view>
-      <view class='item-content'>
-        10
-        <text class=''>张</text>
-        <image src='../../images/right.png'></image>
-      </view>
+      <view class='card-date'>有效期：2018.01.15-2018.02.10</view>
     </view>
-  </navigator>
+    <view class='card-fr'>
+      ￥
+      <text class=''>1</text>
+    </view>
+  </view>
 
-  <navigator url='../share/share' class='card b-shadow'>
-    <view class='card-img'>
-      <image src='../../images/timg.jpg'></image>
-    </view>
-    <view class='card-txt'>
+  <!-- 优惠券列表 -->
+  <!-- <view class='card b-shadow' wx:for="{{youhuiData}}">
+    <view class='card-fl'>
       <view class='item-title'>
-        景点乘车票
+        <image src='../../images/hongbao.png'></image>
+        <text>{{item.couponContent}}</text>
       </view>
-      <view class='item-content'>
-        2
-        <text class=''>张</text>
-        <image src='../../images/right.png'></image>
-      </view>
+      <view class='card-date'>有效期：{{item.createtime}}-{{item.endtime}}</view>
     </view>
-  </navigator>
-
+    <view class='card-fr'>
+      ￥
+      <text class=''>{{item.amount}}</text>
+    </view>
+  </view>  -->
 
 </view>

@@ -13,6 +13,6 @@
     <view class='payBtn'>
       <button class='' bindtap='pay' type="primary" hover-class="other-button-hover">立即支付</button>
     </view> 
-  </view>
+  </view> 
 
 </view>
